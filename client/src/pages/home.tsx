@@ -263,41 +263,39 @@ export default function Home() {
             <div className="w-32 h-1 bg-[hsl(39,67%,55%)] mx-auto"></div>
           </motion.div>
 
-          <div className="grid md:grid-cols-2 gap-10">
+          <div className="grid md:grid-cols-3 gap-8">
             <motion.div initial={{ opacity: 0, x: -50 }} whileInView={{ opacity: 1, x: 0 }} transition={{ duration: 0.8 }} className="relative group">
-              <div className="relative bg-[hsl(273,50%,20%)] p-10 rounded-lg border border-[hsl(39,67%,55%)]/30 hover:border-[hsl(39,67%,55%)]/70 transition-all">
-                <h3 className="text-3xl font-heading font-black text-[hsl(39,67%,55%)] mb-8">The Venue</h3>
-                <h4 className="text-xl font-heading font-bold mb-6 text-[hsl(40,41%,94%)]">Tampa Convention Center</h4>
-                <div className="flex items-start gap-4 mb-4">
-                  <MapPin className="w-5 h-5 text-[hsl(39,67%,55%)] shrink-0 mt-1" />
-                  <p className="text-[hsl(40,41%,94%)]/85 text-lg">333 S Franklin St, Tampa, FL 33602</p>
+              <div className="relative bg-[hsl(273,50%,20%)] p-8 rounded-lg border border-[hsl(39,67%,55%)]/30 hover:border-[hsl(39,67%,55%)]/70 transition-all h-full">
+                <h3 className="text-2xl font-heading font-black text-[hsl(39,67%,55%)] mb-6">The Venue</h3>
+                <h4 className="text-lg font-heading font-bold mb-4 text-[hsl(40,41%,94%)]">Tampa Convention Center</h4>
+                <div className="flex items-start gap-3">
+                  <MapPin className="w-5 h-5 text-[hsl(39,67%,55%)] shrink-0 mt-0.5" />
+                  <p className="text-[hsl(40,41%,94%)]/85 text-sm">333 S Franklin St, Tampa, FL 33602</p>
                 </div>
               </div>
             </motion.div>
 
-            <div className="space-y-6">
-              <motion.div initial={{ opacity: 0, x: 50 }} whileInView={{ opacity: 1, x: 0 }} transition={{ duration: 0.8 }} className="relative group">
-                <div className="relative bg-[hsl(273,50%,20%)] p-8 rounded-lg border border-[hsl(39,67%,55%)]/30 hover:border-[hsl(39,67%,55%)]/70 transition-all">
-                  <h4 className="text-xl font-heading font-black text-[hsl(39,67%,55%)] mb-4 uppercase">Hotel Partner</h4>
-                  <h5 className="text-lg font-heading font-bold mb-3 text-[hsl(40,41%,94%)]">JW Marriott Tampa Water Street</h5>
-                  <p className="text-[hsl(40,41%,94%)]/80 text-sm mb-6">510 Water St, Tampa, FL 33602</p>
-                  <Button className="bg-[hsl(39,67%,55%)] hover:bg-[hsl(39,67%,60%)] text-[hsl(275,57%,16%)] text-sm font-bold px-6 py-2 rounded-lg">
-                    Book with Summit Rate
-                  </Button>
-                </div>
-              </motion.div>
+            <motion.div initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.8, delay: 0.1 }} className="relative group">
+              <div className="relative bg-[hsl(273,50%,20%)] p-8 rounded-lg border border-[hsl(39,67%,55%)]/30 hover:border-[hsl(39,67%,55%)]/70 transition-all h-full flex flex-col">
+                <h4 className="text-2xl font-heading font-black text-[hsl(39,67%,55%)] mb-4 uppercase">Hotel Partner</h4>
+                <h5 className="text-lg font-heading font-bold mb-2 text-[hsl(40,41%,94%)]">JW Marriott Tampa Water Street</h5>
+                <p className="text-[hsl(40,41%,94%)]/80 text-sm mb-6 flex-grow">510 Water St, Tampa, FL 33602</p>
+                <Button className="bg-[hsl(39,67%,55%)] hover:bg-[hsl(39,67%,60%)] text-[hsl(275,57%,16%)] text-xs font-bold px-6 py-2 rounded-lg w-full">
+                  Book with Summit Rate
+                </Button>
+              </div>
+            </motion.div>
 
-              <motion.div initial={{ opacity: 0, x: 50 }} whileInView={{ opacity: 1, x: 0 }} transition={{ duration: 0.8, delay: 0.1 }} className="relative group">
-                <div className="relative bg-[hsl(273,50%,20%)] p-8 rounded-lg border border-[hsl(39,67%,55%)]/30 hover:border-[hsl(39,67%,55%)]/70 transition-all">
-                  <h4 className="text-xl font-heading font-black text-[hsl(39,67%,55%)] mb-6 uppercase">Getting Around</h4>
-                  <ul className="space-y-4 text-sm text-[hsl(40,41%,94%)]/80">
-                    <li className="font-medium"><strong>✈️ Airport:</strong> Tampa International (TPA) - 15 min drive</li>
-                    <li className="font-medium"><strong>🅿️ Parking:</strong> Available at convention center & nearby garages</li>
-                    <li className="font-medium"><strong>🚊 Transit:</strong> TECO Line Streetcar to explore downtown</li>
-                  </ul>
-                </div>
-              </motion.div>
-            </div>
+            <motion.div initial={{ opacity: 0, x: 50 }} whileInView={{ opacity: 1, x: 0 }} transition={{ duration: 0.8, delay: 0.2 }} className="relative group">
+              <div className="relative bg-[hsl(273,50%,20%)] p-8 rounded-lg border border-[hsl(39,67%,55%)]/30 hover:border-[hsl(39,67%,55%)]/70 transition-all h-full">
+                <h4 className="text-2xl font-heading font-black text-[hsl(39,67%,55%)] mb-6 uppercase">Getting Around</h4>
+                <ul className="space-y-3 text-xs text-[hsl(40,41%,94%)]/80">
+                  <li className="font-medium"><strong className="text-[hsl(39,67%,55%)]">✈️ Airport:</strong> Tampa International (TPA) - 15 min drive</li>
+                  <li className="font-medium"><strong className="text-[hsl(39,67%,55%)]">🅿️ Parking:</strong> Available at convention center & nearby garages</li>
+                  <li className="font-medium"><strong className="text-[hsl(39,67%,55%)]">🚊 Transit:</strong> TECO Line Streetcar to explore downtown</li>
+                </ul>
+              </div>
+            </motion.div>
           </div>
         </div>
       </section>
