@@ -16,33 +16,33 @@
   /* Champagne Ivory (#F7F2E9) -> 40 41% 94% */
   --thrive-ivory: 40 41% 94%;
 
-  --background: 40 41% 94%;
-  --foreground: 275 57% 16%;
+  --background: 275 57% 16%;
+  --foreground: 40 41% 94%;
   
-  --card: 0 0% 100%;
-  --card-foreground: 275 57% 16%;
+  --card: 275 50% 12%;
+  --card-foreground: 40 41% 94%;
   
-  --popover: 0 0% 100%;
-  --popover-foreground: 275 57% 16%;
+  --popover: 275 50% 12%;
+  --popover-foreground: 40 41% 94%;
   
-  --primary: 273 51% 34%;
-  --primary-foreground: 0 0% 100%;
+  --primary: 39 67% 55%;
+  --primary-foreground: 275 57% 16%;
   
-  --secondary: 39 67% 55%;
-  --secondary-foreground: 275 57% 16%;
+  --secondary: 273 51% 34%;
+  --secondary-foreground: 40 41% 94%;
   
-  --muted: 275 20% 90%;
-  --muted-foreground: 275 10% 40%;
+  --muted: 275 30% 25%;
+  --muted-foreground: 275 20% 70%;
   
-  --accent: 275 54% 78%;
-  --accent-foreground: 275 57% 16%;
+  --accent: 275 40% 30%;
+  --accent-foreground: 40 41% 94%;
   
   --destructive: 0 84.2% 60.2%;
   --destructive-foreground: 0 0% 98%;
 
   --border: 39 67% 55%;
-  --input: 275 20% 90%;
-  --ring: 273 51% 34%;
+  --input: 275 30% 25%;
+  --ring: 39 67% 55%;
 
   --radius: 0.5rem;
 }
