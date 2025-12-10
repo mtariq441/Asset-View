@@ -14,7 +14,7 @@ import {
 
 import thriveLogo from "@assets/thrive-logo-new.png";
 import heroWomen from "@assets/hero-women.png";
-import womenSmiling from "@assets/women-smiling.png";
+import womenSmiling from "@assets/women-veterans-group.jpg";
 
 // Animation Variants
 const fadeIn = {
