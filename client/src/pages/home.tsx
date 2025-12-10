@@ -323,8 +323,12 @@ export default function Home() {
         <div className="container mx-auto px-4 md:px-6">
           <div className="grid md:grid-cols-4 gap-16">
             <div className="col-span-1 md:col-span-2">
-              <div className="font-heading font-bold text-3xl tracking-widest text-white mb-8">
-                THRIVE
+              <div className="w-28 h-28 rounded-full border-2 border-thrive-gold flex items-center justify-center mb-8 shadow-gold">
+                <img 
+                  src={thriveLogo}
+                  alt="Thrive Summit Logo" 
+                  className="w-[95%] h-[95%] object-contain"
+                />
               </div>
               <p className="text-thrive-orchid/60 max-w-sm mb-8 leading-relaxed font-light">
                 Empowering women veterans to find their voice, their purpose, and their community. A celebration of service and sisterhood.
