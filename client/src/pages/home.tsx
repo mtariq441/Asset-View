@@ -134,36 +134,39 @@ export default function Home() {
       </section>
 
       {/* About Section */}
-      <section id="about" className="py-32 relative">
+      <section id="about" className="py-20 md:py-32 relative">
         <div className="container mx-auto px-4 md:px-6">
-          <div className="grid md:grid-cols-2 gap-16 items-center">
-            <motion.div initial={{ opacity: 0, x: -50 }} whileInView={{ opacity: 1, x: 0 }} transition={{ duration: 0.8 }} className="relative group">
-              <div className="absolute -inset-4 border-2 border-[hsl(39,67%,55%)]/40 rounded-lg z-0"></div>
-              <img src={womenSmiling} alt="Women Veterans" className="relative z-10 w-full rounded-lg" />
+          <div className="grid md:grid-cols-2 gap-12 items-start">
+            <motion.div initial={{ opacity: 0, x: -50 }} whileInView={{ opacity: 1, x: 0 }} transition={{ duration: 0.8 }} className="relative group order-2 md:order-1">
+              <div className="rounded-lg overflow-hidden border-2 border-[hsl(39,67%,55%)]/40">
+                <img src={womenSmiling} alt="Women Veterans" className="w-full h-auto object-cover rounded-lg" />
+              </div>
             </motion.div>
 
-            <motion.div initial={{ opacity: 0, x: 50 }} whileInView={{ opacity: 1, x: 0 }} transition={{ duration: 0.8 }}>
-              <h2 className="text-6xl md:text-7xl font-heading font-black mb-8 leading-tight">
+            <motion.div initial={{ opacity: 0, x: 50 }} whileInView={{ opacity: 1, x: 0 }} transition={{ duration: 0.8 }} className="order-1 md:order-2 pt-8 md:pt-0">
+              <h2 className="text-5xl md:text-6xl font-heading font-black mb-6 leading-tight">
                 <span className="text-[hsl(39,67%,55%)]">Stronger</span>
                 <br/>
                 <span className="text-[hsl(40,41%,94%)]">Together</span>
               </h2>
-              <p className="text-[hsl(40,41%,94%)]/85 text-lg leading-relaxed mb-6 font-light">
+              
+              <p className="text-[hsl(40,41%,94%)]/85 text-base md:text-lg leading-relaxed mb-5 font-light">
                 The <strong className="font-bold text-[hsl(39,67%,55%)]">Thrive Women Veteran Summit</strong> is more than an event; it's a movement that transforms lives and builds legacies. We bring together the finest minds and bravest hearts to foster a community of growth, leadership, and unwavering support.
               </p>
-              <p className="text-[hsl(40,41%,94%)]/80 text-lg leading-relaxed mb-12 font-light">
+              
+              <p className="text-[hsl(40,41%,94%)]/80 text-base md:text-lg leading-relaxed mb-10 font-light">
                 Experience world-class workshops, inspiring keynotes, and the camaraderie that only sisters-in-arms understand. This is your time to be honored for your past and empowered for your future.
               </p>
               
-              <div className="grid grid-cols-3 gap-8">
+              <div className="grid grid-cols-3 gap-4 md:gap-6">
                 {[
                   { num: "500+", label: "Attendees" },
                   { num: "30+", label: "Speakers" },
                   { num: "3", label: "Days" }
                 ].map((stat, i) => (
-                  <motion.div key={i} className="group bg-[hsl(273,50%,20%)] p-6 rounded-lg border border-[hsl(39,67%,55%)]/20 hover:border-[hsl(39,67%,55%)]/60 transition-all" whileHover={{ scale: 1.05, y: -5 }}>
-                    <span className="text-4xl font-heading font-black text-[hsl(39,67%,55%)]">{stat.num}</span>
-                    <span className="text-xs uppercase tracking-widest text-[hsl(40,41%,94%)]/60 mt-3 font-bold block">{stat.label}</span>
+                  <motion.div key={i} className="group bg-[hsl(273,50%,20%)] p-5 md:p-6 rounded-lg border border-[hsl(39,67%,55%)]/20 hover:border-[hsl(39,67%,55%)]/60 transition-all text-center" whileHover={{ scale: 1.05, y: -5 }}>
+                    <span className="text-3xl md:text-4xl font-heading font-black text-[hsl(39,67%,55%)] block">{stat.num}</span>
+                    <span className="text-xs md:text-sm uppercase tracking-widest text-[hsl(40,41%,94%)]/60 mt-2 md:mt-3 font-bold block">{stat.label}</span>
                   </motion.div>
                 ))}
               </div>
