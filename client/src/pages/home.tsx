@@ -11,6 +11,7 @@ import {
   SheetContent,
   SheetTrigger,
 } from "@/components/ui/sheet";
+import { ThemeToggle } from "@/components/theme-toggle";
 
 import thriveLogo from "@assets/thrive-logo-new.png";
 import heroWomen from "@assets/hero-women.png";
@@ -94,13 +95,15 @@ export default function Home() {
             <a href="#speakers" className="text-sm font-medium transition-colors uppercase tracking-wide text-thrive-ivory hover:text-thrive-gold drop-shadow-md">Speakers</a>
             <a href="#schedule" className="text-sm font-medium transition-colors uppercase tracking-wide text-thrive-ivory hover:text-thrive-gold drop-shadow-md">Schedule</a>
             <a href="#location" className="text-sm font-medium transition-colors uppercase tracking-wide text-thrive-ivory hover:text-thrive-gold drop-shadow-md">Location</a>
+            <ThemeToggle />
             <Button className="bg-thrive-gold hover:bg-[hsl(39,67%,65%)] text-thrive-plum font-heading uppercase tracking-wider rounded-none px-6 border border-thrive-gold transition-all duration-300 shadow-[0_0_15px_rgba(217,164,65,0.3)]">
               Register Now
             </Button>
           </div>
 
           {/* Mobile Nav */}
-          <div className="md:hidden">
+          <div className="md:hidden flex items-center gap-2">
+            <ThemeToggle />
             <Sheet>
               <SheetTrigger asChild>
                 <Button variant="ghost" size="icon" className={isScrolled ? "text-thrive-plum" : "text-white"}>
