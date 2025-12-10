@@ -135,37 +135,37 @@ export default function Home() {
       </section>
 
       {/* About Section */}
-      <section id="about" className="py-24 bg-card relative">
+      <section id="about" className="py-24 bg-[hsl(275,57%,16%)] relative">
         <div className="container mx-auto px-4 md:px-6">
           <div className="grid md:grid-cols-2 gap-16 items-center">
             <div className="relative group">
-              <div className="absolute -inset-4 border-3 border-primary/60 z-0 rounded-lg"></div>
+              <div className="absolute -inset-4 border-3 border-[hsl(39,67%,55%)]/60 z-0 rounded-lg"></div>
               <img src={womenSmiling} alt="Women Veterans" className="relative z-10 w-full rounded-lg shadow-2xl" />
             </div>
 
             <div>
-              <h2 className="text-5xl md:text-6xl font-heading font-bold mb-8 text-primary">
-                Stronger <span className="text-foreground/80">Together</span>
+              <h2 className="text-5xl md:text-6xl font-heading font-bold mb-8 text-[hsl(39,67%,55%)]">
+                Stronger <span className="text-[hsl(40,41%,94%)]/90">Together</span>
               </h2>
-              <p className="text-foreground/80 text-lg leading-relaxed mb-6 font-light">
+              <p className="text-[hsl(40,41%,94%)]/80 text-lg leading-relaxed mb-6 font-light">
                 The <strong className="font-semibold">Thrive Women Veteran Summit</strong> is more than an event; it's a movement. We bring together the finest minds and bravest hearts to foster a community of growth, leadership, and unwavering support.
               </p>
-              <p className="text-foreground/80 text-lg leading-relaxed mb-10 font-light">
+              <p className="text-[hsl(40,41%,94%)]/80 text-lg leading-relaxed mb-10 font-light">
                 Experience world-class workshops, inspiring keynotes, and the camaraderie that only sisters-in-arms understand.
               </p>
               
-              <div className="grid grid-cols-3 gap-8 border-t border-border pt-8">
+              <div className="grid grid-cols-3 gap-8 border-t border-[hsl(39,67%,55%)]/20 pt-8">
                 <div className="flex flex-col">
-                  <span className="text-4xl font-heading font-bold text-primary">500+</span>
-                  <span className="text-xs uppercase tracking-widest text-muted-foreground mt-2 font-semibold">Attendees</span>
+                  <span className="text-4xl font-heading font-bold text-[hsl(39,67%,55%)]">500+</span>
+                  <span className="text-xs uppercase tracking-widest text-[hsl(40,41%,94%)]/60 mt-2 font-semibold">Attendees</span>
                 </div>
                 <div className="flex flex-col">
-                  <span className="text-4xl font-heading font-bold text-primary">30+</span>
-                  <span className="text-xs uppercase tracking-widest text-muted-foreground mt-2 font-semibold">Speakers</span>
+                  <span className="text-4xl font-heading font-bold text-[hsl(39,67%,55%)]">30+</span>
+                  <span className="text-xs uppercase tracking-widest text-[hsl(40,41%,94%)]/60 mt-2 font-semibold">Speakers</span>
                 </div>
                 <div className="flex flex-col">
-                  <span className="text-4xl font-heading font-bold text-primary">3</span>
-                  <span className="text-xs uppercase tracking-widest text-muted-foreground mt-2 font-semibold">Days</span>
+                  <span className="text-4xl font-heading font-bold text-[hsl(39,67%,55%)]">3</span>
+                  <span className="text-xs uppercase tracking-widest text-[hsl(40,41%,94%)]/60 mt-2 font-semibold">Days</span>
                 </div>
               </div>
             </div>
@@ -174,18 +174,18 @@ export default function Home() {
       </section>
 
       {/* Benefits Section */}
-      <section className="py-24 bg-background">
+      <section className="py-24 bg-[hsl(272,60%,18%)]">
         <div className="container mx-auto px-4 md:px-6">
           <div className="text-center mb-16">
-            <div className="w-24 h-1 bg-primary mx-auto mb-6"></div>
-            <h2 className="text-4xl md:text-5xl font-heading font-bold mb-4 uppercase">Summit Benefits</h2>
+            <div className="w-24 h-1 bg-[hsl(39,67%,55%)] mx-auto mb-6"></div>
+            <h2 className="text-4xl md:text-5xl font-heading font-bold mb-4 uppercase text-[hsl(40,41%,94%)]">Summit Benefits</h2>
           </div>
 
           <div className="grid md:grid-cols-3 gap-8">
             {benefits.map((benefit, i) => (
-              <div key={i} className="bg-card p-10 rounded-lg border border-border hover:border-primary transition-colors">
-                <h3 className="text-2xl font-heading font-bold text-primary mb-4 uppercase">{benefit.title}</h3>
-                <p className="text-foreground/80 leading-relaxed font-light">{benefit.desc}</p>
+              <div key={i} className="bg-[hsl(275,50%,12%)] p-10 rounded-lg border border-[hsl(39,67%,55%)]/40 hover:border-[hsl(39,67%,55%)] transition-colors">
+                <h3 className="text-2xl font-heading font-bold text-[hsl(39,67%,55%)] mb-4 uppercase">{benefit.title}</h3>
+                <p className="text-[hsl(40,41%,94%)]/80 leading-relaxed font-light">{benefit.desc}</p>
               </div>
             ))}
           </div>
@@ -193,26 +193,26 @@ export default function Home() {
       </section>
 
       {/* Speakers Section */}
-      <section id="speakers" className="py-24 bg-card">
+      <section id="speakers" className="py-24 bg-[hsl(275,57%,16%)]">
         <div className="container mx-auto px-4 md:px-6">
           <div className="text-center mb-16">
-            <div className="w-24 h-1 bg-primary mx-auto mb-6"></div>
-            <h2 className="text-4xl md:text-5xl font-heading font-bold mb-4 uppercase">Distinguished Speakers</h2>
-            <p className="text-foreground/70 max-w-2xl mx-auto">Learn from industry leaders and military pioneers dedicated to your success.</p>
+            <div className="w-24 h-1 bg-[hsl(39,67%,55%)] mx-auto mb-6"></div>
+            <h2 className="text-4xl md:text-5xl font-heading font-bold mb-4 uppercase text-[hsl(40,41%,94%)]">Distinguished Speakers</h2>
+            <p className="text-[hsl(40,41%,94%)]/70 max-w-2xl mx-auto">Learn from industry leaders and military pioneers dedicated to your success.</p>
           </div>
 
           <div className="grid md:grid-cols-3 gap-10">
             {speakers.map((speaker, index) => (
               <div key={index} className="group">
-                <div className="relative overflow-hidden rounded-lg mb-6 border-3 border-primary/40 group-hover:border-primary transition-colors">
+                <div className="relative overflow-hidden rounded-lg mb-6 border-3 border-[hsl(39,67%,55%)]/40 group-hover:border-[hsl(39,67%,55%)] transition-colors">
                   <div className="aspect-[3/4] overflow-hidden">
                     <img src={speaker.image} alt={speaker.name} className="w-full h-full object-cover filter grayscale group-hover:grayscale-0 transition-all duration-300" />
                   </div>
                 </div>
                 <div className="text-center">
-                  <p className="text-primary text-xs font-bold uppercase tracking-[0.2em] mb-2">{speaker.role}</p>
-                  <h3 className="text-xl font-heading font-bold mb-3">{speaker.name}</h3>
-                  <p className="text-foreground/70 text-sm leading-relaxed">{speaker.bio}</p>
+                  <p className="text-[hsl(39,67%,55%)] text-xs font-bold uppercase tracking-[0.2em] mb-2">{speaker.role}</p>
+                  <h3 className="text-xl font-heading font-bold mb-3 text-[hsl(40,41%,94%)]">{speaker.name}</h3>
+                  <p className="text-[hsl(40,41%,94%)]/70 text-sm leading-relaxed">{speaker.bio}</p>
                 </div>
               </div>
             ))}
@@ -221,24 +221,24 @@ export default function Home() {
       </section>
 
       {/* Schedule Section */}
-      <section id="schedule" className="py-24 bg-background">
+      <section id="schedule" className="py-24 bg-[hsl(272,60%,18%)]">
         <div className="container mx-auto px-4 md:px-6">
           <div className="mb-16">
-            <div className="w-24 h-1 bg-primary mx-auto mb-6"></div>
-            <h2 className="text-4xl md:text-5xl font-heading font-bold text-center uppercase mb-4">Summit Agenda</h2>
-            <p className="text-center text-foreground/70">A curated experience of inspiration and action.</p>
+            <div className="w-24 h-1 bg-[hsl(39,67%,55%)] mx-auto mb-6"></div>
+            <h2 className="text-4xl md:text-5xl font-heading font-bold text-center uppercase mb-4 text-[hsl(40,41%,94%)]">Summit Agenda</h2>
+            <p className="text-center text-[hsl(40,41%,94%)]/70">A curated experience of inspiration and action.</p>
           </div>
 
           <div className="space-y-6">
             {schedule.map((item, index) => (
-              <div key={index} className="bg-card p-8 rounded-lg border border-border hover:border-primary transition-colors">
+              <div key={index} className="bg-[hsl(275,50%,12%)] p-8 rounded-lg border border-[hsl(39,67%,55%)]/40 hover:border-[hsl(39,67%,55%)] transition-colors">
                 <div className="flex flex-col md:flex-row md:justify-between md:items-start gap-4">
                   <div className="flex-1">
-                    <h3 className="text-2xl font-heading font-bold text-primary mb-2">{item.title}</h3>
-                    <p className="text-foreground/75 font-light">{item.desc}</p>
+                    <h3 className="text-2xl font-heading font-bold text-[hsl(39,67%,55%)] mb-2">{item.title}</h3>
+                    <p className="text-[hsl(40,41%,94%)]/75 font-light">{item.desc}</p>
                   </div>
                   <div className="flex-shrink-0">
-                    <span className="text-xl font-heading font-bold text-primary/60 whitespace-nowrap">{item.time}</span>
+                    <span className="text-xl font-heading font-bold text-[hsl(39,67%,55%)]/60 whitespace-nowrap">{item.time}</span>
                   </div>
                 </div>
               </div>
@@ -248,36 +248,36 @@ export default function Home() {
       </section>
 
       {/* Location Section */}
-      <section id="location" className="py-24 bg-card">
+      <section id="location" className="py-24 bg-[hsl(275,57%,16%)]">
         <div className="container mx-auto px-4 md:px-6">
           <div className="text-center mb-16">
-            <div className="w-24 h-1 bg-primary mx-auto mb-6"></div>
-            <h2 className="text-4xl md:text-5xl font-heading font-bold mb-4 uppercase">Location & Details</h2>
+            <div className="w-24 h-1 bg-[hsl(39,67%,55%)] mx-auto mb-6"></div>
+            <h2 className="text-4xl md:text-5xl font-heading font-bold mb-4 uppercase text-[hsl(40,41%,94%)]">Location & Details</h2>
           </div>
 
           <div className="grid md:grid-cols-2 gap-10">
-            <div className="bg-background p-10 rounded-lg border-2 border-primary/40">
-              <h3 className="text-2xl font-heading font-bold text-primary mb-6">The Venue</h3>
-              <h4 className="text-xl font-heading font-semibold mb-4">Tampa Convention Center</h4>
+            <div className="bg-[hsl(275,50%,12%)] p-10 rounded-lg border-2 border-[hsl(39,67%,55%)]/40">
+              <h3 className="text-2xl font-heading font-bold text-[hsl(39,67%,55%)] mb-6">The Venue</h3>
+              <h4 className="text-xl font-heading font-semibold mb-4 text-[hsl(40,41%,94%)]">Tampa Convention Center</h4>
               <div className="flex items-start gap-3 mb-3">
-                <MapPin className="w-5 h-5 text-primary shrink-0 mt-1" />
-                <p className="text-foreground/80">333 S Franklin St, Tampa, FL 33602</p>
+                <MapPin className="w-5 h-5 text-[hsl(39,67%,55%)] shrink-0 mt-1" />
+                <p className="text-[hsl(40,41%,94%)]/80">333 S Franklin St, Tampa, FL 33602</p>
               </div>
             </div>
 
             <div className="space-y-6">
-              <div className="bg-background p-8 rounded-lg border border-border">
-                <h4 className="text-xl font-heading font-bold text-primary mb-4 uppercase">Hotel Partner</h4>
-                <h5 className="text-lg font-heading font-bold mb-2">JW Marriott Tampa Water Street</h5>
-                <p className="text-foreground/80 text-sm mb-4">510 Water St, Tampa, FL 33602</p>
-                <Button className="bg-primary text-primary-foreground hover:bg-primary/90 text-xs font-semibold px-4 py-2">
+              <div className="bg-[hsl(275,50%,12%)] p-8 rounded-lg border border-[hsl(39,67%,55%)]/40">
+                <h4 className="text-xl font-heading font-bold text-[hsl(39,67%,55%)] mb-4 uppercase">Hotel Partner</h4>
+                <h5 className="text-lg font-heading font-bold mb-2 text-[hsl(40,41%,94%)]">JW Marriott Tampa Water Street</h5>
+                <p className="text-[hsl(40,41%,94%)]/80 text-sm mb-4">510 Water St, Tampa, FL 33602</p>
+                <Button className="bg-[hsl(39,67%,55%)] text-[hsl(275,57%,16%)] hover:bg-[hsl(39,67%,60%)] text-xs font-semibold px-4 py-2">
                   Book with Summit Rate
                 </Button>
               </div>
 
-              <div className="bg-background p-8 rounded-lg border border-border">
-                <h4 className="text-xl font-heading font-bold text-primary mb-4 uppercase">Getting Around</h4>
-                <ul className="space-y-3 text-sm text-foreground/80 font-light">
+              <div className="bg-[hsl(275,50%,12%)] p-8 rounded-lg border border-[hsl(39,67%,55%)]/40">
+                <h4 className="text-xl font-heading font-bold text-[hsl(39,67%,55%)] mb-4 uppercase">Getting Around</h4>
+                <ul className="space-y-3 text-sm text-[hsl(40,41%,94%)]/80 font-light">
                   <li className="flex gap-3">
                     <span className="font-semibold min-w-fit">Airport:</span> Tampa International (TPA) - 15 min drive
                   </li>
@@ -295,59 +295,59 @@ export default function Home() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-32 bg-primary relative overflow-hidden">
+      <section className="py-32 bg-[hsl(39,67%,55%)] relative overflow-hidden">
         <div className="absolute inset-0 opacity-10">
           <div className="absolute inset-0" style={{ backgroundImage: `url(${heroWomen})`, backgroundSize: 'cover' }}></div>
         </div>
         
         <div className="container mx-auto px-4 md:px-6 text-center relative z-10">
-          <h2 className="text-5xl sm:text-6xl md:text-7xl font-heading font-bold text-primary-foreground mb-8">
+          <h2 className="text-5xl sm:text-6xl md:text-7xl font-heading font-bold text-[hsl(275,57%,16%)] mb-8">
             Ready to Rise?
           </h2>
           
-          <p className="text-lg md:text-xl text-primary-foreground/90 mb-10 font-light max-w-2xl mx-auto">
+          <p className="text-lg md:text-xl text-[hsl(275,57%,16%)]/90 mb-10 font-light max-w-2xl mx-auto">
             Don't miss this opportunity to connect with your community and elevate your life.
           </p>
           
-          <Button size="lg" className="h-14 md:h-16 px-12 md:px-16 bg-primary-foreground hover:bg-primary-foreground/90 text-primary font-heading font-bold text-lg uppercase tracking-[0.15em]">
+          <Button size="lg" className="h-14 md:h-16 px-12 md:px-16 bg-[hsl(275,57%,16%)] hover:bg-[hsl(275,57%,20%)] text-[hsl(39,67%,55%)] font-heading font-bold text-lg uppercase tracking-[0.15em] border-2 border-[hsl(275,57%,16%)]">
             Register for Summit
           </Button>
         </div>
       </section>
 
       {/* Footer */}
-      <footer className="bg-background border-t border-border py-16">
+      <footer className="bg-[hsl(272,60%,12%)] border-t border-[hsl(39,67%,55%)]/40 py-16">
         <div className="container mx-auto px-4 md:px-6">
           <div className="grid md:grid-cols-4 gap-12 mb-12">
             <div className="col-span-1 md:col-span-2">
-              <div className="w-24 h-24 rounded-full border-2 border-primary flex items-center justify-center mb-6">
+              <div className="w-24 h-24 rounded-full border-2 border-[hsl(39,67%,55%)] flex items-center justify-center mb-6">
                 <img src={thriveLogo} alt="Thrive" className="w-[95%] h-[95%] object-contain" />
               </div>
-              <p className="text-foreground/70 max-w-sm mb-6 leading-relaxed font-light">
+              <p className="text-[hsl(40,41%,94%)]/70 max-w-sm mb-6 leading-relaxed font-light">
                 Empowering women veterans to find their voice, their purpose, and their community.
               </p>
             </div>
 
             <div>
-              <h4 className="font-heading font-bold text-lg mb-6 text-primary uppercase">Quick Links</h4>
-              <ul className="space-y-3 text-sm text-foreground/70 font-light">
-                <li><a href="#about" className="hover:text-primary transition-colors">About Us</a></li>
-                <li><a href="#speakers" className="hover:text-primary transition-colors">Speakers</a></li>
-                <li><a href="#schedule" className="hover:text-primary transition-colors">Schedule</a></li>
-                <li><a href="#location" className="hover:text-primary transition-colors">Location</a></li>
+              <h4 className="font-heading font-bold text-lg mb-6 text-[hsl(39,67%,55%)] uppercase">Quick Links</h4>
+              <ul className="space-y-3 text-sm text-[hsl(40,41%,94%)]/70 font-light">
+                <li><a href="#about" className="hover:text-[hsl(39,67%,55%)] transition-colors">About Us</a></li>
+                <li><a href="#speakers" className="hover:text-[hsl(39,67%,55%)] transition-colors">Speakers</a></li>
+                <li><a href="#schedule" className="hover:text-[hsl(39,67%,55%)] transition-colors">Schedule</a></li>
+                <li><a href="#location" className="hover:text-[hsl(39,67%,55%)] transition-colors">Location</a></li>
               </ul>
             </div>
 
             <div>
-              <h4 className="font-heading font-bold text-lg mb-6 text-primary uppercase">Contact</h4>
-              <div className="space-y-3 text-sm text-foreground/70 font-light">
+              <h4 className="font-heading font-bold text-lg mb-6 text-[hsl(39,67%,55%)] uppercase">Contact</h4>
+              <div className="space-y-3 text-sm text-[hsl(40,41%,94%)]/70 font-light">
                 <p>333 S Franklin St<br/>Tampa, FL 33602</p>
                 <p>June 5-7, 2026</p>
               </div>
             </div>
           </div>
           
-          <div className="border-t border-border pt-8 text-center text-xs text-foreground/50 font-light">
+          <div className="border-t border-[hsl(39,67%,55%)]/20 pt-8 text-center text-xs text-[hsl(40,41%,94%)]/50 font-light">
             <p>&copy; 2026 Thrive Women Veteran Summit. All rights reserved.</p>
           </div>
         </div>
