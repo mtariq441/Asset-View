@@ -83,7 +83,7 @@ export default function Home() {
               <img 
                 src={thriveLogo}
                 alt="Thrive Summit Logo" 
-                className="w-[98%] h-[98%] object-contain"
+                className="w-[110%] h-[110%] object-contain"
               />
             </div>
           </div>
