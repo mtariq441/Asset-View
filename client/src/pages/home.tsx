@@ -297,24 +297,32 @@ export default function Home() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-40 bg-gradient-to-r from-thrive-gold via-[#e8c06e] to-thrive-gold relative overflow-hidden border-t-4 border-thrive-gold shadow-[0_-10px_40px_rgba(217,164,65,0.3)]">
-        <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-10"></div>
+      <section className="py-48 bg-gradient-to-b from-[hsl(272,60%,22%)] via-[hsl(272,65%,35%)] to-[hsl(272,62%,28%)] relative overflow-hidden border-t-2 border-thrive-gold/50">
+        <div className="absolute inset-0">
+          <div className="absolute top-0 left-1/4 w-96 h-96 bg-[hsl(39,67%,55%)]/8 rounded-full blur-3xl"></div>
+          <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-[hsl(272,65%,48%)]/8 rounded-full blur-3xl"></div>
+        </div>
         
         <div className="container mx-auto px-4 md:px-6 text-center relative z-10">
-          <div className="inline-block mb-8">
-            <div className="w-20 h-20 rounded-full border-4 border-thrive-plum/60 flex items-center justify-center mx-auto bg-thrive-plum/10">
-              <Star className="w-12 h-12 text-thrive-plum fill-current" />
+          <div className="max-w-3xl mx-auto">
+            <div className="inline-block mb-12">
+              <div className="w-24 h-24 rounded-full border-3 border-thrive-gold flex items-center justify-center mx-auto bg-gradient-to-br from-thrive-gold/20 to-thrive-gold/5 shadow-[0_0_30px_rgba(217,164,65,0.4)]">
+                <Star className="w-14 h-14 text-thrive-gold fill-current" style={{ filter: 'drop-shadow(0 0 8px rgba(217,164,65,0.6))' }} />
+              </div>
             </div>
+            
+            <h2 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-heading font-bold text-thrive-gold mb-8 leading-tight" style={{ textShadow: '0 4px 20px rgba(217,164,65,0.4), 0 0 40px rgba(217,164,65,0.2)' }}>
+              Ready to Rise?
+            </h2>
+            
+            <p className="text-lg md:text-xl text-thrive-ivory/85 mb-16 font-light leading-relaxed">
+              Don't miss this opportunity to connect with your community and elevate your life.
+            </p>
+            
+            <Button size="lg" className="h-16 md:h-18 px-12 md:px-16 bg-gradient-to-b from-thrive-gold to-[#d4a355] hover:from-[#f0e3b8] hover:to-[#e8c06e] text-thrive-plum font-heading font-bold text-lg md:text-xl uppercase tracking-[0.15em] rounded-xl shadow-[0_15px_50px_rgba(217,164,65,0.5)] border-2 border-thrive-gold/70 hover:border-white/40 transition-all duration-300" style={{ textShadow: '0 2px 6px rgba(0,0,0,0.2)' }}>
+              Register for Summit
+            </Button>
           </div>
-          <h2 className="text-6xl md:text-8xl font-heading font-bold text-thrive-plum mb-8 max-w-5xl mx-auto leading-tight" style={{ textShadow: '0 4px 15px rgba(0,0,0,0.3)' }}>
-            Ready to Rise?
-          </h2>
-          <p className="text-2xl text-thrive-plum/90 mb-14 max-w-2xl mx-auto font-medium">
-            Don't miss this opportunity to connect with your community and elevate your life.
-          </p>
-          <Button size="lg" className="h-20 px-16 bg-gradient-to-b from-thrive-plum to-[hsl(275,57%,18%)] text-thrive-gold font-heading text-xl uppercase tracking-[0.2em] shadow-[0_15px_40px_rgba(0,0,0,0.4)] border-3 border-thrive-gold/50 rounded-lg hover:shadow-[0_20px_50px_rgba(0,0,0,0.5)]" style={{ textShadow: '0 2px 4px rgba(0,0,0,0.3)' }}>
-            Register for Summit
-          </Button>
         </div>
       </section>
 
