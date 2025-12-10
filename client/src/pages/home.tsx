@@ -79,7 +79,7 @@ export default function Home() {
       <nav className={`fixed w-full z-50 transition-all duration-300 ${isScrolled ? "bg-[hsl(275,57%,10%)]/95 backdrop-blur-md shadow-lg shadow-[hsl(39,67%,55%)]/20 py-2" : "bg-transparent py-4"}`}>
         <div className="container mx-auto px-4 md:px-6 flex justify-between items-center">
           <div className="flex items-center gap-2">
-            <div className="w-16 h-16 md:w-20 md:h-20 rounded-full bg-thrive-gold/10 border-2 border-thrive-gold flex items-center justify-center p-2">
+            <div className="w-16 h-16 md:w-20 md:h-20 rounded-full border-2 border-thrive-gold flex items-center justify-center p-2">
               <img 
                 src={thriveLogo}
                 alt="Thrive Summit Logo" 
@@ -110,7 +110,7 @@ export default function Home() {
               <SheetContent side="right" className="bg-thrive-plum border-l border-thrive-gold/30">
                 <div className="flex flex-col gap-6 mt-10">
                   <div className="flex justify-center mb-6">
-                    <div className="w-24 h-24 rounded-full bg-thrive-gold/10 border-2 border-thrive-gold flex items-center justify-center p-3">
+                    <div className="w-24 h-24 rounded-full border-2 border-thrive-gold flex items-center justify-center p-3">
                       <img 
                         src={thriveLogo}
                         alt="Thrive Summit Logo" 
