@@ -76,14 +76,14 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-thrive-plum font-sans overflow-x-hidden text-thrive-ivory">
       {/* Navigation */}
-      <nav className={`fixed w-full z-50 transition-all duration-300 ${isScrolled ? "bg-[hsl(275,57%,10%)]/95 backdrop-blur-md shadow-lg shadow-[hsl(39,67%,55%)]/20 py-2" : "bg-transparent py-4"}`}>
+      <nav className={`fixed w-full z-50 transition-all duration-300 ${isScrolled ? "bg-[hsl(275,57%,10%)]/95 backdrop-blur-md shadow-lg shadow-[hsl(39,67%,55%)]/20 py-1" : "bg-transparent py-2"}`}>
         <div className="container mx-auto px-4 md:px-6 flex justify-between items-center">
           <div className="flex items-center gap-2">
-            <div className="w-28 h-28 md:w-40 md:h-40 rounded-full border-2 border-thrive-gold flex items-center justify-center">
+            <div className="w-32 h-32 md:w-56 md:h-56 rounded-full border-3 border-thrive-gold flex items-center justify-center">
               <img 
                 src={thriveLogo}
                 alt="Thrive Summit Logo" 
-                className="w-[95%] h-[95%] object-contain"
+                className="w-[93%] h-[93%] object-contain"
               />
             </div>
           </div>
