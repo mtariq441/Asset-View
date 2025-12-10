@@ -79,11 +79,11 @@ export default function Home() {
       <nav className={`fixed w-full z-50 transition-all duration-300 ${isScrolled ? "bg-[hsl(275,57%,10%)]/95 backdrop-blur-md shadow-lg shadow-[hsl(39,67%,55%)]/20 py-1" : "bg-transparent py-2"}`}>
         <div className="container mx-auto px-4 md:px-6 flex justify-between items-center">
           <div className="flex items-center gap-2">
-            <div className="w-20 h-20 md:w-32 md:h-32 rounded-full border-2 border-thrive-gold flex items-center justify-center">
+            <div className="w-16 h-16 md:w-24 md:h-24 rounded-full border-2 border-thrive-gold flex items-center justify-center">
               <img 
                 src={thriveLogo}
                 alt="Thrive Summit Logo" 
-                className="w-[95%] h-[95%] object-contain"
+                className="w-[98%] h-[98%] object-contain"
               />
             </div>
           </div>
