@@ -100,32 +100,32 @@ export default function Home() {
       </nav>
 
       {/* Hero Section */}
-      <section className="relative h-screen min-h-[700px] flex items-center justify-center overflow-hidden pt-20">
+      <section className="relative flex items-center justify-center overflow-hidden pt-32 pb-20 md:pt-40 md:pb-24 min-h-screen">
         <div className="absolute inset-0 z-0">
-          <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/50 to-[hsl(275,57%,16%)]/80 z-10"></div>
+          <div className="absolute inset-0 bg-gradient-to-b from-black/35 via-black/45 to-[hsl(275,57%,16%)]/85 z-10"></div>
           <img src={heroWomen} alt="Women Veterans" className="w-full h-full object-cover" />
         </div>
 
-        <div className="container relative z-20 px-4 md:px-6 text-center">
-          <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }} className="flex flex-col items-center justify-center gap-8">
-            <motion.div className="inline-block px-10 py-4 border-2 border-[hsl(39,67%,55%)] rounded-lg bg-[hsl(275,57%,16%)]/40" whileHover={{ scale: 1.05 }}>
-              <span className="text-[hsl(39,67%,55%)] font-heading tracking-[0.3em] text-xs md:text-sm font-bold uppercase">
+        <div className="container relative z-20 px-4 md:px-6 text-center max-w-4xl mx-auto">
+          <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }} className="flex flex-col items-center justify-center gap-6 md:gap-10">
+            <motion.div className="inline-block px-8 py-3 md:px-10 md:py-4 border-2 border-[hsl(39,67%,55%)] rounded-lg bg-[hsl(275,57%,16%)]/40" whileHover={{ scale: 1.05 }}>
+              <span className="text-[hsl(39,67%,55%)] font-heading tracking-[0.2em] text-xs md:text-sm font-bold uppercase">
                 June 5-7, 2026 • Tampa, FL
               </span>
             </motion.div>
             
-            <motion.h1 className="text-6xl sm:text-7xl md:text-8xl lg:text-9xl font-heading font-black text-white leading-tight" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.2, duration: 1 }}>
+            <motion.h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-heading font-black text-white leading-tight" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.2, duration: 1 }}>
               <span className="block">Honor.</span>
               <span className="block text-[hsl(39,67%,55%)]">Empower.</span>
               <span className="block">Rise.</span>
             </motion.h1>
 
-            <motion.p className="text-xl md:text-2xl text-white/95 max-w-3xl font-light leading-relaxed" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.4, duration: 0.8 }}>
+            <motion.p className="text-lg md:text-2xl text-white/95 max-w-3xl font-light leading-relaxed" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.4, duration: 0.8 }}>
               The premier summit celebrating the strength, resilience, and leadership of women veterans.
             </motion.p>
 
             <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.6 }} whileHover={{ scale: 1.08 }}>
-              <Button size="lg" className="h-16 px-12 bg-[hsl(39,67%,55%)] hover:bg-[hsl(39,67%,60%)] text-[hsl(275,57%,16%)] font-heading font-bold text-lg tracking-widest uppercase rounded-lg">
+              <Button size="lg" className="h-14 md:h-16 px-10 md:px-12 bg-[hsl(39,67%,55%)] hover:bg-[hsl(39,67%,60%)] text-[hsl(275,57%,16%)] font-heading font-bold text-base md:text-lg tracking-widest uppercase rounded-lg">
                 Secure Your Seat
               </Button>
             </motion.div>
