@@ -12,8 +12,20 @@ async function buildAll() {
     
     console.log('Building frontend...');
     
+    // Inline config instead of loading from TS file
     await build({
-      configFile: path.resolve(__dirname, 'vite.config.ts'),
+      root: path.resolve(__dirname, 'client'),
+      build: {
+        outDir: path.resolve(__dirname, 'dist/public'),
+        emptyOutDir: true,
+      },
+      resolve: {
+        alias: {
+          '@': path.resolve(__dirname, 'client', 'src'),
+          '@shared': path.resolve(__dirname, 'shared'),
+          '@assets': path.resolve(__dirname, 'attached_assets'),
+        },
+      },
     });
     
     console.log('Build complete! Frontend ready for deployment');
