@@ -143,37 +143,27 @@ export default function Home() {
         </div>
 
         <div className="container relative z-20 px-4 md:px-6 text-center">
-          <motion.div 
-            initial="hidden"
-            animate="visible"
-            variants={fadeIn}
-            className="flex flex-col items-center"
-          >
-            <div className="inline-block mb-6 border-b border-[hsl(39,67%,55%)]/60 pb-2">
-              <span className="text-thrive-gold font-heading tracking-[0.3em] text-sm md:text-base font-bold uppercase drop-shadow-md">
+          <div className="flex flex-col items-center">
+            <div className="inline-block mb-8 px-8 py-4 border-2 border-[hsl(39,67%,55%)]/80 rounded-full bg-[hsl(275,57%,16%)]/40 backdrop-blur-sm">
+              <span className="text-thrive-gold font-heading tracking-[0.3em] text-sm md:text-base font-bold uppercase drop-shadow-lg">
                 June 5-7, 2026 • Tampa, FL
               </span>
             </div>
             
-            <h1 className="text-5xl md:text-7xl lg:text-9xl font-heading font-bold text-white mb-8 leading-tight tracking-tight drop-shadow-2xl">
+            <h1 className="text-6xl md:text-8xl lg:text-[9rem] font-heading font-bold text-white mb-8 leading-tight tracking-tight drop-shadow-2xl" style={{ textShadow: '0 4px 20px rgba(217,164,65,0.4), 0 0 40px rgba(217,164,65,0.2)' }}>
               <span className="block mb-2">Honor.</span>
               <span className="block text-gold-gradient mb-2">Empower.</span>
               <span className="block">Rise.</span>
             </h1>
 
-            <p className="text-lg md:text-2xl text-[hsl(40,41%,94%)]/90 max-w-3xl mb-12 font-light leading-relaxed drop-shadow-md">
+            <p className="text-xl md:text-2xl text-[hsl(40,41%,94%)]/95 max-w-3xl mb-14 font-light leading-relaxed drop-shadow-lg">
               The premier summit celebrating the strength, resilience, and leadership of women veterans.
             </p>
 
-            <motion.div 
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-            >
-              <Button size="lg" className="h-16 px-12 bg-gradient-to-r from-thrive-gold via-[#e8c06e] to-thrive-gold hover:from-[hsl(39,67%,65%)] hover:to-[hsl(39,67%,65%)] text-thrive-plum font-heading font-bold text-xl tracking-widest uppercase rounded-sm shadow-[0_0_50px_rgba(217,164,65,0.6)] transition-all duration-300 border border-transparent hover:border-white/40 hover:shadow-[0_0_60px_rgba(217,164,65,0.7)]">
-                Secure Your Seat
-              </Button>
-            </motion.div>
-          </motion.div>
+            <Button size="lg" className="h-16 px-14 bg-gradient-to-b from-[hsl(39,67%,60%)] to-[hsl(39,67%,50%)] hover:from-[hsl(39,67%,65%)] hover:to-[hsl(39,67%,55%)] text-thrive-plum font-heading font-bold text-xl tracking-widest uppercase rounded-lg shadow-[0_10px_40px_rgba(217,164,65,0.6)] border-2 border-[hsl(39,67%,70%)] hover:border-white/60" style={{ textShadow: '0 2px 4px rgba(0,0,0,0.3)' }}>
+              Secure Your Seat
+            </Button>
+          </div>
         </div>
       </section>
 
@@ -184,31 +174,21 @@ export default function Home() {
 
         <div className="container mx-auto px-4 md:px-6 relative z-10">
           <div className="grid md:grid-cols-2 gap-20 items-center">
-            <motion.div 
-              initial={{ opacity: 0, x: -50 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.8 }}
-            >
+            <div>
               <div className="relative group">
-                <div className="absolute -inset-4 border-2 border-[hsl(39,67%,55%)]/40 z-0 translate-x-4 translate-y-4 group-hover:translate-x-2 group-hover:translate-y-2 transition-transform duration-500"></div>
-                <div className="absolute -inset-4 border border-[hsl(273,51%,34%)]/20 z-0 -translate-x-4 -translate-y-4 group-hover:-translate-x-2 group-hover:-translate-y-2 transition-transform duration-500"></div>
+                <div className="absolute -inset-6 border-3 border-[hsl(39,67%,55%)]/60 z-0 rounded-lg"></div>
+                <div className="absolute -inset-3 border-2 border-[hsl(273,51%,34%)]/30 z-0 rounded-lg"></div>
                 <img 
                   src={womenSmiling}
                   alt="Women Veterans Smiling" 
-                  className="relative z-10 w-full rounded-sm shadow-[0_20px_40px_rgba(0,0,0,0.4)] group-hover:shadow-[0_25px_50px_rgba(0,0,0,0.5)] transition-shadow duration-500"
+                  className="relative z-10 w-full rounded-lg shadow-[0_25px_50px_rgba(0,0,0,0.5)]"
                 />
               </div>
-            </motion.div>
+            </div>
 
-            <motion.div 
-              initial={{ opacity: 0, x: 50 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.8 }}
-            >
-              <h2 className="text-thrive-gold text-5xl md:text-6xl font-heading font-bold mb-8 leading-tight">
-                Stronger <br/><span className="text-transparent bg-clip-text bg-gradient-to-r from-thrive-gold to-[#e8c06e] italic font-serif">Together</span>
+            <div>
+              <h2 className="text-5xl md:text-7xl font-heading font-bold mb-8 leading-tight" style={{ background: 'linear-gradient(135deg, hsl(39,67%,55%) 0%, hsl(39,67%,65%) 50%, hsl(39,67%,55%) 100%)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text', textShadow: '0 4px 15px rgba(217,164,65,0.3)' }}>
+                Stronger <br/><span className="italic font-serif">Together</span>
               </h2>
               <p className="text-thrive-ivory/80 text-lg leading-relaxed mb-6 font-light">
                 The <strong className="text-thrive-gold font-semibold">Thrive Women Veteran Summit</strong> is more than an event; it's a movement. We bring together the finest minds and bravest hearts to foster a community of growth, leadership, and unwavering support.
@@ -231,7 +211,7 @@ export default function Home() {
                   <span className="text-xs uppercase tracking-widest text-thrive-ivory/60 mt-2 font-semibold">Days</span>
                 </div>
               </div>
-            </motion.div>
+            </div>
           </div>
         </div>
       </section>
@@ -248,34 +228,28 @@ export default function Home() {
             </p>
           </div>
 
-          <motion.div 
-            variants={staggerContainer}
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true }}
-            className="grid md:grid-cols-3 gap-10"
-          >
+          <div className="grid md:grid-cols-3 gap-10">
             {speakers.map((speaker, index) => (
-              <motion.div key={index} variants={fadeIn}>
-                <Card className="bg-transparent border-0 rounded-none overflow-hidden group">
+              <div key={index}>
+                <Card className="bg-[hsl(275,50%,18%)] border-2 border-[hsl(39,67%,55%)]/40 rounded-lg overflow-hidden group shadow-[0_15px_35px_rgba(0,0,0,0.3)]">
                   <div className="aspect-[3/4] overflow-hidden relative mb-6">
-                    <div className="absolute inset-0 border-2 border-[hsl(39,67%,55%)]/0 group-hover:border-[hsl(39,67%,55%)]/100 transition-all duration-500 z-20 pointer-events-none inset-x-4 inset-y-4"></div>
-                    <div className="absolute inset-0 bg-[hsl(273,51%,34%)]/20 group-hover:bg-transparent transition-colors duration-500 z-10"></div>
+                    <div className="absolute inset-0 border-3 border-[hsl(39,67%,55%)]/0 group-hover:border-[hsl(39,67%,55%)]/80 z-20 pointer-events-none inset-x-3 inset-y-3 rounded-lg"></div>
+                    <div className="absolute inset-0 bg-[hsl(273,51%,34%)]/40 group-hover:bg-transparent z-10"></div>
                     <img 
                       src={speaker.image} 
                       alt={speaker.name} 
-                      className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 filter grayscale group-hover:grayscale-0"
+                      className="w-full h-full object-cover filter grayscale group-hover:grayscale-0"
                     />
                   </div>
-                  <div className="text-center">
-                    <p className="text-thrive-gold text-xs font-bold uppercase tracking-[0.2em] mb-3">{speaker.role}</p>
+                  <div className="text-center px-4 pb-6">
+                    <p className="text-thrive-gold text-xs font-bold uppercase tracking-[0.2em] mb-3" style={{ textShadow: '0 2px 8px rgba(217,164,65,0.3)' }}>{speaker.role}</p>
                     <h3 className="text-2xl font-heading font-bold text-white mb-3">{speaker.name}</h3>
-                    <p className="text-thrive-ivory/60 text-sm leading-relaxed max-w-xs mx-auto">{speaker.bio}</p>
+                    <p className="text-thrive-ivory/70 text-sm leading-relaxed max-w-xs mx-auto">{speaker.bio}</p>
                   </div>
                 </Card>
-              </motion.div>
+              </div>
             ))}
-          </motion.div>
+          </div>
           
           <div className="text-center mt-16">
             <Button variant="outline" className="h-14 px-8 border-thrive-gold text-thrive-gold hover:bg-thrive-gold hover:text-thrive-plum uppercase tracking-widest font-heading text-sm bg-transparent transition-all">
@@ -303,9 +277,9 @@ export default function Home() {
               {schedule.map((item, index) => (
                 <div key={index} className={`flex flex-col md:flex-row gap-8 items-center ${index % 2 === 0 ? 'md:flex-row-reverse' : ''}`}>
                   <div className="w-full md:w-1/2 flex md:justify-end justify-start md:px-16">
-                    <div className={`bg-[hsl(275,50%,18%)] p-8 md:p-10 rounded-sm shadow-[0_10px_25px_rgba(0,0,0,0.3)] hover:shadow-[0_20px_40px_rgba(217,164,65,0.3)] transition-all duration-300 w-full max-w-lg border border-thrive-gold/20 hover:border-thrive-gold/60 group relative overflow-hidden ${index % 2 === 0 ? 'md:text-right' : ''}`}>
-                      <div className="absolute top-0 left-0 w-1 h-full bg-thrive-gold transform scale-y-0 group-hover:scale-y-100 transition-transform duration-300 origin-top"></div>
-                      <h3 className="text-2xl font-heading font-bold text-thrive-gold mb-3 group-hover:text-[hsl(39,67%,65%)] transition-colors">{item.title}</h3>
+                    <div className={`bg-[hsl(275,50%,18%)] p-8 md:p-10 rounded-lg shadow-[0_15px_35px_rgba(0,0,0,0.4)] w-full max-w-lg border-2 border-[hsl(39,67%,55%)]/40 group relative overflow-hidden ${index % 2 === 0 ? 'md:text-right' : ''}`}>
+                      <div className="absolute top-0 left-0 w-1 h-full bg-gradient-to-b from-thrive-gold to-[#e8c06e]"></div>
+                      <h3 className="text-2xl font-heading font-bold text-thrive-gold mb-3">{item.title}</h3>
                       <p className="text-thrive-ivory/70 leading-relaxed">{item.desc}</p>
                     </div>
                   </div>
@@ -327,22 +301,20 @@ export default function Home() {
         <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-10"></div>
         
         <div className="container mx-auto px-4 md:px-6 text-center relative z-10">
-          <motion.div
-            initial={{ scale: 0.9, opacity: 0 }}
-            whileInView={{ scale: 1, opacity: 1 }}
-            transition={{ duration: 0.6 }}
-          >
-            <Star className="w-16 h-16 text-thrive-plum mx-auto mb-8 fill-current" />
-            <h2 className="text-5xl md:text-7xl font-heading font-bold text-thrive-plum mb-8 max-w-5xl mx-auto leading-tight">
-              Ready to Rise?
-            </h2>
-            <p className="text-2xl text-thrive-plum/80 mb-12 max-w-2xl mx-auto font-medium">
-              Don't miss this opportunity to connect with your community and elevate your life.
-            </p>
-            <Button size="lg" className="h-20 px-16 bg-thrive-plum text-thrive-gold hover:bg-[hsl(275,57%,20%)] hover:scale-110 transition-all duration-300 font-heading text-xl uppercase tracking-[0.2em] shadow-[0_10px_40px_rgba(0,0,0,0.3)] border-2 border-thrive-plum hover:border-thrive-gold/60 hover:shadow-[0_15px_50px_rgba(0,0,0,0.4)]">
-              Register for Summit
-            </Button>
-          </motion.div>
+          <div className="inline-block mb-8">
+            <div className="w-20 h-20 rounded-full border-4 border-thrive-plum/60 flex items-center justify-center mx-auto bg-thrive-plum/10">
+              <Star className="w-12 h-12 text-thrive-plum fill-current" />
+            </div>
+          </div>
+          <h2 className="text-6xl md:text-8xl font-heading font-bold text-thrive-plum mb-8 max-w-5xl mx-auto leading-tight" style={{ textShadow: '0 4px 15px rgba(0,0,0,0.3)' }}>
+            Ready to Rise?
+          </h2>
+          <p className="text-2xl text-thrive-plum/90 mb-14 max-w-2xl mx-auto font-medium">
+            Don't miss this opportunity to connect with your community and elevate your life.
+          </p>
+          <Button size="lg" className="h-20 px-16 bg-gradient-to-b from-thrive-plum to-[hsl(275,57%,18%)] text-thrive-gold font-heading text-xl uppercase tracking-[0.2em] shadow-[0_15px_40px_rgba(0,0,0,0.4)] border-3 border-thrive-gold/50 rounded-lg hover:shadow-[0_20px_50px_rgba(0,0,0,0.5)]" style={{ textShadow: '0 2px 4px rgba(0,0,0,0.3)' }}>
+            Register for Summit
+          </Button>
         </div>
       </section>
 
