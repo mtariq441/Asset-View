@@ -12,7 +12,7 @@ import {
   SheetTrigger,
 } from "@/components/ui/sheet";
 
-import thriveLogo from "@assets/thrive-logo.png";
+import thriveLogo from "@assets/thrive-logo-new.png";
 import heroWomen from "@assets/hero-women.png";
 import womenSmiling from "@assets/women-smiling.png";
 
