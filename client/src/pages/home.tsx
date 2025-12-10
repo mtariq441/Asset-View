@@ -131,15 +131,15 @@ export default function Home() {
       </nav>
 
       {/* Hero Section */}
-      <section className="relative h-screen min-h-[700px] flex items-center justify-center overflow-hidden pt-20 bg-gradient-to-b from-[hsl(275,57%,16%)] via-[hsl(273,51%,25%)] to-[hsl(275,57%,10%)]">
+      <section className="relative h-screen min-h-[700px] flex items-center justify-center overflow-hidden pt-20">
         <div className="absolute inset-0 z-0">
-          <div className="absolute inset-0 bg-[hsl(275,57%,16%)]/40 z-10 mix-blend-multiply"></div>
-          <div className="absolute inset-0 bg-gradient-to-t from-[hsl(275,57%,16%)] via-transparent to-transparent z-10"></div>
           <img 
             src={heroWomen}
             alt="Women Veterans" 
             className="w-full h-full object-cover"
           />
+          <div className="absolute inset-0 bg-gradient-to-t from-[hsl(275,57%,16%)]/90 via-[hsl(275,57%,16%)]/50 to-transparent z-10"></div>
+          <div className="absolute inset-0 bg-gradient-to-b from-[hsl(275,57%,16%)]/40 via-transparent to-[hsl(275,57%,16%)]/70 z-10"></div>
         </div>
 
         <div className="container relative z-20 px-4 md:px-6 text-center">
@@ -149,27 +149,27 @@ export default function Home() {
             variants={fadeIn}
             className="flex flex-col items-center"
           >
-            <div className="inline-block mb-6 border-b border-[hsl(39,67%,55%)]/60 pb-2">
-              <span className="text-thrive-gold font-heading tracking-[0.3em] text-sm md:text-base font-bold uppercase drop-shadow-md">
+            <div className="inline-block mb-8 border-b-2 border-thrive-gold pb-3">
+              <span className="text-thrive-gold font-heading tracking-[0.25em] text-sm md:text-lg font-bold uppercase drop-shadow-lg">
                 June 5-7, 2026 • Tampa, FL
               </span>
             </div>
             
-            <h1 className="text-5xl md:text-7xl lg:text-9xl font-heading font-bold text-white mb-8 leading-tight tracking-tight drop-shadow-2xl">
-              <span className="block mb-2">Honor.</span>
-              <span className="block text-gold-gradient mb-2">Empower.</span>
+            <h1 className="text-6xl md:text-8xl lg:text-[10rem] font-heading font-bold text-white mb-6 leading-tight tracking-tight drop-shadow-2xl">
+              <span className="block mb-3">Honor.</span>
+              <span className="block bg-gradient-to-r from-thrive-gold via-[#f0e3b8] to-[#e8c06e] bg-clip-text text-transparent mb-3">Empower.</span>
               <span className="block">Rise.</span>
             </h1>
 
-            <p className="text-lg md:text-2xl text-[hsl(40,41%,94%)]/90 max-w-3xl mb-12 font-light leading-relaxed drop-shadow-md">
+            <p className="text-xl md:text-3xl text-thrive-ivory/95 max-w-4xl mb-14 font-light leading-relaxed drop-shadow-lg">
               The premier summit celebrating the strength, resilience, and leadership of women veterans.
             </p>
 
             <motion.div 
-              whileHover={{ scale: 1.05 }}
+              whileHover={{ scale: 1.08 }}
               whileTap={{ scale: 0.95 }}
             >
-              <Button size="lg" className="h-16 px-12 bg-gradient-to-r from-thrive-gold via-[#e8c06e] to-thrive-gold hover:from-[hsl(39,67%,65%)] hover:to-[hsl(39,67%,65%)] text-thrive-plum font-heading font-bold text-xl tracking-widest uppercase rounded-sm shadow-[0_0_40px_rgba(217,164,65,0.5)] transition-all border border-transparent hover:border-thrive-gold/50">
+              <Button size="lg" className="h-20 px-16 bg-gradient-to-r from-thrive-gold via-[#f0e3b8] to-thrive-gold hover:from-[hsl(39,67%,65%)] hover:via-white hover:to-[hsl(39,67%,65%)] text-thrive-plum font-heading font-bold text-2xl tracking-widest uppercase rounded-none shadow-[0_0_50px_rgba(217,164,65,0.6)] transition-all border-2 border-white/20 hover:border-white/40">
                 Secure Your Seat
               </Button>
             </motion.div>
