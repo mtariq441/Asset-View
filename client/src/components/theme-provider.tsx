@@ -8,23 +8,19 @@ export const ThemeContext = createContext<{
 
 export function ThemeProvider({ children }: { children: any }) {
   const [theme, setTheme] = useState<"light" | "dark">(() => {
-    if (typeof window === "undefined") return "light";
+    // Always default to dark theme for this site
+    if (typeof window === "undefined") return "dark";
     const stored = localStorage.getItem("theme");
     if (stored === "light" || stored === "dark") return stored;
-    return window.matchMedia("(prefers-color-scheme: dark)").matches
-      ? "dark"
-      : "light";
+    return "dark"; // Force dark theme
   });
 
   useEffect(() => {
     const root = document.documentElement;
-    if (theme === "dark") {
-      root.classList.add("dark");
-    } else {
-      root.classList.remove("dark");
-    }
-    localStorage.setItem("theme", theme);
-  }, [theme]);
+    root.classList.add("dark");
+    root.classList.remove("light");
+    localStorage.setItem("theme", "dark");
+  }, []);
 
   return (
     <ThemeContext.Provider value={{ theme, setTheme }}>
