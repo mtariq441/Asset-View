@@ -131,7 +131,7 @@ export default function Home() {
       </nav>
 
       {/* Hero Section */}
-      <section className="relative h-screen min-h-[700px] flex items-center justify-center overflow-hidden pt-20 bg-gradient-to-b from-[hsl(275,57%,16%)] via-[hsl(273,51%,25%)] to-[hsl(275,57%,10%)]">
+      <section className="relative min-h-screen flex items-center justify-center overflow-visible pt-16 md:pt-20 bg-gradient-to-b from-[hsl(275,57%,16%)] via-[hsl(273,51%,25%)] to-[hsl(275,57%,10%)]">
         <div className="absolute inset-0 z-0">
           <div className="absolute inset-0 bg-[hsl(275,57%,16%)]/40 z-10 mix-blend-multiply"></div>
           <div className="absolute inset-0 bg-gradient-to-t from-[hsl(275,57%,16%)] via-transparent to-transparent z-10"></div>
@@ -142,25 +142,25 @@ export default function Home() {
           />
         </div>
 
-        <div className="container relative z-20 px-4 md:px-6 text-center">
+        <div className="container relative z-20 px-4 md:px-6 text-center py-12 md:py-0">
           <div className="flex flex-col items-center">
-            <div className="inline-block mb-8 px-8 py-4 border-2 border-[hsl(39,67%,55%)]/80 rounded-full bg-[hsl(275,57%,16%)]/40 backdrop-blur-sm">
-              <span className="text-thrive-gold font-heading tracking-[0.3em] text-sm md:text-base font-bold uppercase drop-shadow-lg">
+            <div className="inline-block mb-6 md:mb-8 px-6 md:px-8 py-3 md:py-4 border-2 border-[hsl(39,67%,55%)]/80 rounded-full bg-[hsl(275,57%,16%)]/40 backdrop-blur-sm">
+              <span className="text-thrive-gold font-heading tracking-[0.2em] md:tracking-[0.3em] text-xs md:text-base font-bold uppercase drop-shadow-lg">
                 June 5-7, 2026 • Tampa, FL
               </span>
             </div>
             
-            <h1 className="text-6xl md:text-8xl lg:text-[9rem] font-heading font-bold text-white mb-8 leading-tight tracking-tight drop-shadow-2xl" style={{ textShadow: '0 4px 20px rgba(217,164,65,0.4), 0 0 40px rgba(217,164,65,0.2)' }}>
-              <span className="block mb-2">Honor.</span>
-              <span className="block text-gold-gradient mb-2">Empower.</span>
+            <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-heading font-bold text-white mb-6 md:mb-8 leading-tight tracking-tight drop-shadow-2xl" style={{ textShadow: '0 4px 20px rgba(217,164,65,0.4), 0 0 40px rgba(217,164,65,0.2)' }}>
+              <span className="block mb-1 md:mb-2">Honor.</span>
+              <span className="block text-gold-gradient mb-1 md:mb-2">Empower.</span>
               <span className="block">Rise.</span>
             </h1>
 
-            <p className="text-xl md:text-2xl text-[hsl(40,41%,94%)]/95 max-w-3xl mb-14 font-light leading-relaxed drop-shadow-lg">
+            <p className="text-lg md:text-xl lg:text-2xl text-[hsl(40,41%,94%)]/95 max-w-3xl mb-10 md:mb-14 font-light leading-relaxed drop-shadow-lg">
               The premier summit celebrating the strength, resilience, and leadership of women veterans.
             </p>
 
-            <Button size="lg" className="h-16 px-14 bg-gradient-to-b from-[hsl(39,67%,60%)] to-[hsl(39,67%,50%)] hover:from-[hsl(39,67%,65%)] hover:to-[hsl(39,67%,55%)] text-thrive-plum font-heading font-bold text-xl tracking-widest uppercase rounded-lg shadow-[0_10px_40px_rgba(217,164,65,0.6)] border-2 border-[hsl(39,67%,70%)] hover:border-white/60" style={{ textShadow: '0 2px 4px rgba(0,0,0,0.3)' }}>
+            <Button size="lg" className="h-14 md:h-16 px-10 md:px-14 bg-gradient-to-b from-[hsl(39,67%,60%)] to-[hsl(39,67%,50%)] hover:from-[hsl(39,67%,65%)] hover:to-[hsl(39,67%,55%)] text-thrive-plum font-heading font-bold text-lg md:text-xl tracking-widest uppercase rounded-lg shadow-[0_10px_40px_rgba(217,164,65,0.6)] border-2 border-[hsl(39,67%,70%)] hover:border-white/60" style={{ textShadow: '0 2px 4px rgba(0,0,0,0.3)' }}>
               Secure Your Seat
             </Button>
           </div>
