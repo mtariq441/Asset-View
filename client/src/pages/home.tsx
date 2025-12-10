@@ -76,10 +76,10 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-thrive-plum font-sans overflow-x-hidden text-thrive-ivory">
       {/* Navigation */}
-      <nav className={`fixed w-full z-50 transition-all duration-300 ${isScrolled ? "bg-[hsl(275,57%,10%)]/95 backdrop-blur-md shadow-lg shadow-[hsl(39,67%,55%)]/20 py-1" : "bg-transparent py-2"}`}>
+      <nav className={`fixed w-full z-50 transition-all duration-300 ${isScrolled ? "bg-[hsl(275,57%,10%)]/98 backdrop-blur-xl shadow-[0_8px_32px_rgba(0,0,0,0.4)] shadow-gold py-1" : "bg-transparent py-2"}`}>
         <div className="container mx-auto px-4 md:px-6 flex justify-between items-center">
           <div className="flex items-center gap-2">
-            <div className="w-16 h-16 md:w-24 md:h-24 rounded-full border-2 border-thrive-gold flex items-center justify-center">
+            <div className="w-16 h-16 md:w-24 md:h-24 rounded-full border-2 border-thrive-gold flex items-center justify-center shadow-gold transition-all duration-300 hover:shadow-[0_0_30px_rgba(217,164,65,0.5)]">
               <img 
                 src={thriveLogo}
                 alt="Thrive Summit Logo" 
@@ -169,7 +169,7 @@ export default function Home() {
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
-              <Button size="lg" className="h-16 px-12 bg-gradient-to-r from-thrive-gold via-[#e8c06e] to-thrive-gold hover:from-[hsl(39,67%,65%)] hover:to-[hsl(39,67%,65%)] text-thrive-plum font-heading font-bold text-xl tracking-widest uppercase rounded-sm shadow-[0_0_40px_rgba(217,164,65,0.5)] transition-all border border-transparent hover:border-thrive-gold/50">
+              <Button size="lg" className="h-16 px-12 bg-gradient-to-r from-thrive-gold via-[#e8c06e] to-thrive-gold hover:from-[hsl(39,67%,65%)] hover:to-[hsl(39,67%,65%)] text-thrive-plum font-heading font-bold text-xl tracking-widest uppercase rounded-sm shadow-[0_0_50px_rgba(217,164,65,0.6)] transition-all duration-300 border border-transparent hover:border-white/40 hover:shadow-[0_0_60px_rgba(217,164,65,0.7)]">
                 Secure Your Seat
               </Button>
             </motion.div>
@@ -178,7 +178,7 @@ export default function Home() {
       </section>
 
       {/* About / Mission Section */}
-      <section id="about" className="py-32 bg-[hsl(275,57%,12%)] relative overflow-hidden border-t border-thrive-gold/20">
+      <section id="about" className="py-40 bg-[hsl(275,57%,12%)] relative overflow-hidden border-t-2 border-thrive-gold/30 backdrop-premium">
         <div className="absolute top-0 left-0 w-[500px] h-[500px] bg-[hsl(275,54%,78%)]/20 rounded-full blur-[120px] -translate-x-1/2 -translate-y-1/2"></div>
         <div className="absolute bottom-0 right-0 w-[600px] h-[600px] bg-[hsl(39,67%,55%)]/10 rounded-full blur-[120px] translate-x-1/3 translate-y-1/3"></div>
 
@@ -191,12 +191,12 @@ export default function Home() {
               transition={{ duration: 0.8 }}
             >
               <div className="relative group">
-                <div className="absolute -inset-4 border-2 border-[hsl(39,67%,55%)]/30 z-0 translate-x-4 translate-y-4 group-hover:translate-x-2 group-hover:translate-y-2 transition-transform duration-500"></div>
-                <div className="absolute -inset-4 border border-[hsl(273,51%,34%)]/10 z-0 -translate-x-4 -translate-y-4 group-hover:-translate-x-2 group-hover:-translate-y-2 transition-transform duration-500"></div>
+                <div className="absolute -inset-4 border-2 border-[hsl(39,67%,55%)]/40 z-0 translate-x-4 translate-y-4 group-hover:translate-x-2 group-hover:translate-y-2 transition-transform duration-500"></div>
+                <div className="absolute -inset-4 border border-[hsl(273,51%,34%)]/20 z-0 -translate-x-4 -translate-y-4 group-hover:-translate-x-2 group-hover:-translate-y-2 transition-transform duration-500"></div>
                 <img 
                   src={womenSmiling}
                   alt="Women Veterans Smiling" 
-                  className="relative z-10 w-full rounded-sm shadow-2xl"
+                  className="relative z-10 w-full rounded-sm shadow-[0_20px_40px_rgba(0,0,0,0.4)] group-hover:shadow-[0_25px_50px_rgba(0,0,0,0.5)] transition-shadow duration-500"
                 />
               </div>
             </motion.div>
@@ -237,7 +237,7 @@ export default function Home() {
       </section>
 
       {/* Speakers Section */}
-      <section id="speakers" className="py-32 bg-gradient-to-b from-[hsl(275,57%,12%)] to-[hsl(275,57%,10%)] text-thrive-ivory relative border-t border-thrive-gold/20">
+      <section id="speakers" className="py-40 bg-gradient-to-b from-[hsl(275,57%,12%)] to-[hsl(275,57%,10%)] text-thrive-ivory relative border-t-2 border-thrive-gold/30 backdrop-premium">
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-[#5a3684] to-[hsl(275,57%,16%)] opacity-30"></div>
         <div className="container mx-auto px-4 md:px-6 relative z-10">
           <div className="text-center mb-20">
@@ -286,7 +286,7 @@ export default function Home() {
       </section>
 
       {/* Schedule Section */}
-      <section id="schedule" className="py-32 bg-[hsl(275,57%,14%)] relative border-t border-thrive-gold/20">
+      <section id="schedule" className="py-40 bg-[hsl(275,57%,14%)] relative border-t-2 border-thrive-gold/30 backdrop-premium">
         <div className="container mx-auto px-4 md:px-6">
           <div className="flex flex-col md:flex-row justify-between items-end mb-20 gap-8 border-b border-thrive-gold/20 pb-10">
             <div>
@@ -303,7 +303,7 @@ export default function Home() {
               {schedule.map((item, index) => (
                 <div key={index} className={`flex flex-col md:flex-row gap-8 items-center ${index % 2 === 0 ? 'md:flex-row-reverse' : ''}`}>
                   <div className="w-full md:w-1/2 flex md:justify-end justify-start md:px-16">
-                    <div className={`bg-[hsl(275,50%,18%)] p-8 md:p-10 rounded-sm hover:shadow-lg hover:shadow-thrive-gold/20 transition-all duration-300 w-full max-w-lg border border-thrive-gold/20 hover:border-thrive-gold/50 group relative overflow-hidden ${index % 2 === 0 ? 'md:text-right' : ''}`}>
+                    <div className={`bg-[hsl(275,50%,18%)] p-8 md:p-10 rounded-sm shadow-[0_10px_25px_rgba(0,0,0,0.3)] hover:shadow-[0_20px_40px_rgba(217,164,65,0.3)] transition-all duration-300 w-full max-w-lg border border-thrive-gold/20 hover:border-thrive-gold/60 group relative overflow-hidden ${index % 2 === 0 ? 'md:text-right' : ''}`}>
                       <div className="absolute top-0 left-0 w-1 h-full bg-thrive-gold transform scale-y-0 group-hover:scale-y-100 transition-transform duration-300 origin-top"></div>
                       <h3 className="text-2xl font-heading font-bold text-thrive-gold mb-3 group-hover:text-[hsl(39,67%,65%)] transition-colors">{item.title}</h3>
                       <p className="text-thrive-ivory/70 leading-relaxed">{item.desc}</p>
@@ -323,7 +323,7 @@ export default function Home() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-32 bg-gradient-to-r from-thrive-gold via-[#e8c06e] to-thrive-gold relative overflow-hidden border-t-4 border-thrive-gold">
+      <section className="py-40 bg-gradient-to-r from-thrive-gold via-[#e8c06e] to-thrive-gold relative overflow-hidden border-t-4 border-thrive-gold shadow-[0_-10px_40px_rgba(217,164,65,0.3)]">
         <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-10"></div>
         
         <div className="container mx-auto px-4 md:px-6 text-center relative z-10">
@@ -339,7 +339,7 @@ export default function Home() {
             <p className="text-2xl text-thrive-plum/80 mb-12 max-w-2xl mx-auto font-medium">
               Don't miss this opportunity to connect with your community and elevate your life.
             </p>
-            <Button size="lg" className="h-20 px-16 bg-thrive-plum text-thrive-gold hover:bg-[hsl(275,57%,20%)] hover:scale-105 transition-all duration-300 font-heading text-xl uppercase tracking-[0.2em] shadow-2xl border-2 border-thrive-plum hover:border-thrive-gold/50">
+            <Button size="lg" className="h-20 px-16 bg-thrive-plum text-thrive-gold hover:bg-[hsl(275,57%,20%)] hover:scale-110 transition-all duration-300 font-heading text-xl uppercase tracking-[0.2em] shadow-[0_10px_40px_rgba(0,0,0,0.3)] border-2 border-thrive-plum hover:border-thrive-gold/60 hover:shadow-[0_15px_50px_rgba(0,0,0,0.4)]">
               Register for Summit
             </Button>
           </motion.div>
@@ -347,7 +347,7 @@ export default function Home() {
       </section>
 
       {/* Footer */}
-      <footer className="bg-[#0f050f] text-thrive-ivory py-20 border-t border-thrive-gold/30">
+      <footer className="bg-[#0f050f] text-thrive-ivory py-24 border-t-2 border-thrive-gold/40 backdrop-premium">
         <div className="container mx-auto px-4 md:px-6">
           <div className="grid md:grid-cols-4 gap-16">
             <div className="col-span-1 md:col-span-2">
@@ -359,7 +359,7 @@ export default function Home() {
               </p>
               <div className="flex gap-4">
                 {['Twitter', 'Facebook', 'LinkedIn', 'Instagram'].map((social, i) => (
-                  <div key={i} className="w-12 h-12 rounded-full bg-white/5 flex items-center justify-center hover:bg-thrive-gold hover:text-thrive-plum transition-all duration-300 cursor-pointer border border-white/10 hover:border-thrive-gold">
+                  <div key={i} className="w-12 h-12 rounded-full bg-white/5 flex items-center justify-center hover:bg-thrive-gold hover:text-thrive-plum transition-all duration-300 cursor-pointer border border-white/10 hover:border-thrive-gold shadow-[0_4px_12px_rgba(217,164,65,0.0)] hover:shadow-[0_8px_20px_rgba(217,164,65,0.3)]">
                     <User size={20} />
                   </div>
                 ))}
@@ -369,11 +369,11 @@ export default function Home() {
             <div>
               <h4 className="font-heading font-bold text-lg mb-8 text-thrive-gold tracking-wider">Quick Links</h4>
               <ul className="space-y-5 text-sm text-thrive-ivory/60 font-light">
-                <li><a href="#" className="hover:text-white transition-colors flex items-center gap-2"><ArrowRight size={14} className="text-thrive-gold"/> About Us</a></li>
-                <li><a href="#" className="hover:text-white transition-colors flex items-center gap-2"><ArrowRight size={14} className="text-thrive-gold"/> Speakers</a></li>
-                <li><a href="#" className="hover:text-white transition-colors flex items-center gap-2"><ArrowRight size={14} className="text-thrive-gold"/> Schedule</a></li>
-                <li><a href="#" className="hover:text-white transition-colors flex items-center gap-2"><ArrowRight size={14} className="text-thrive-gold"/> Sponsorship</a></li>
-                <li><a href="#" className="hover:text-white transition-colors flex items-center gap-2"><ArrowRight size={14} className="text-thrive-gold"/> Contact</a></li>
+                <li><a href="#" className="hover:text-thrive-gold transition-all duration-300 flex items-center gap-2 group"><ArrowRight size={14} className="text-thrive-gold group-hover:translate-x-1 transition-transform"/> About Us</a></li>
+                <li><a href="#" className="hover:text-thrive-gold transition-all duration-300 flex items-center gap-2 group"><ArrowRight size={14} className="text-thrive-gold group-hover:translate-x-1 transition-transform"/> Speakers</a></li>
+                <li><a href="#" className="hover:text-thrive-gold transition-all duration-300 flex items-center gap-2 group"><ArrowRight size={14} className="text-thrive-gold group-hover:translate-x-1 transition-transform"/> Schedule</a></li>
+                <li><a href="#" className="hover:text-thrive-gold transition-all duration-300 flex items-center gap-2 group"><ArrowRight size={14} className="text-thrive-gold group-hover:translate-x-1 transition-transform"/> Sponsorship</a></li>
+                <li><a href="#" className="hover:text-thrive-gold transition-all duration-300 flex items-center gap-2 group"><ArrowRight size={14} className="text-thrive-gold group-hover:translate-x-1 transition-transform"/> Contact</a></li>
               </ul>
             </div>
 
@@ -392,7 +392,7 @@ export default function Home() {
             </div>
           </div>
           
-          <div className="border-t border-white/5 mt-20 pt-10 flex flex-col md:flex-row justify-between items-center text-xs text-white/30 font-light tracking-wide">
+          <div className="border-t border-thrive-gold/20 mt-20 pt-10 flex flex-col md:flex-row justify-between items-center text-xs text-white/40 font-light tracking-wide">
             <p>&copy; 2026 Thrive Women Veteran Summit. All rights reserved.</p>
             <div className="flex gap-8 mt-6 md:mt-0">
               <a href="#" className="hover:text-white transition-colors">Privacy Policy</a>

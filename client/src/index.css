@@ -140,6 +140,27 @@
     @apply bg-gradient-to-r from-[hsl(39,67%,55%)] via-[#F9E5B9] to-[hsl(39,67%,55%)];
   }
 
+  /* Premium shadow effects */
+  .shadow-premium {
+    @apply shadow-[0_10px_30px_rgba(0,0,0,0.3)];
+  }
+  
+  .shadow-gold {
+    @apply shadow-[0_0_25px_rgba(217,164,65,0.3)];
+  }
+
+  /* Subtle texture backdrop */
+  .backdrop-premium {
+    background-image: 
+      repeating-linear-gradient(
+        45deg,
+        transparent,
+        transparent 2px,
+        rgba(255,255,255,0.02) 2px,
+        rgba(255,255,255,0.02) 4px
+      );
+  }
+
   /* Theme-aware utility shortcuts */
   .text-thrive-purple {
     @apply text-[hsl(273,51%,34%)];
