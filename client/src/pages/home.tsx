@@ -12,6 +12,10 @@ import {
   SheetTrigger,
 } from "@/components/ui/sheet";
 
+import thriveLogo from "@assets/thrive-logo.png";
+import heroWomen from "@assets/hero-women.png";
+import womenSmiling from "@assets/women-smiling.png";
+
 // Animation Variants
 const fadeIn = {
   hidden: { opacity: 0, y: 20 },
@@ -76,7 +80,7 @@ export default function Home() {
         <div className="container mx-auto px-4 md:px-6 flex justify-between items-center">
           <div className="flex items-center gap-2">
             <img 
-              src="/attached_assets/thrive-logo.png" 
+              src={thriveLogo}
               alt="Thrive Summit Logo" 
               className="h-16 md:h-20 w-auto object-contain"
             />
@@ -105,7 +109,7 @@ export default function Home() {
                 <div className="flex flex-col gap-6 mt-10">
                   <div className="flex justify-center mb-6">
                     <img 
-                      src="/attached_assets/thrive-logo.png" 
+                      src={thriveLogo}
                       alt="Thrive Summit Logo" 
                       className="h-24 w-auto object-contain"
                     />
@@ -128,7 +132,7 @@ export default function Home() {
           <div className="absolute inset-0 bg-[hsl(275,57%,16%)]/70 z-10 mix-blend-multiply"></div>
           <div className="absolute inset-0 bg-gradient-to-t from-[hsl(275,57%,16%)] via-transparent to-transparent z-10"></div>
           <img 
-            src="/attached_assets/hero-women.png" 
+            src={heroWomen}
             alt="Women Veterans" 
             className="w-full h-full object-cover"
           />
@@ -186,7 +190,7 @@ export default function Home() {
                 <div className="absolute -inset-4 border-2 border-[hsl(39,67%,55%)]/30 z-0 translate-x-4 translate-y-4 group-hover:translate-x-2 group-hover:translate-y-2 transition-transform duration-500"></div>
                 <div className="absolute -inset-4 border border-[hsl(273,51%,34%)]/10 z-0 -translate-x-4 -translate-y-4 group-hover:-translate-x-2 group-hover:-translate-y-2 transition-transform duration-500"></div>
                 <img 
-                  src="/attached_assets/women-smiling.png" 
+                  src={womenSmiling}
                   alt="Women Veterans Smiling" 
                   className="relative z-10 w-full rounded-sm shadow-2xl"
                 />
