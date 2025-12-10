@@ -163,32 +163,32 @@
 
   /* Theme-aware utility shortcuts */
   .text-thrive-purple {
-    @apply text-[hsl(273,51%,34%)];
+    @apply text-[hsl(272,65%,48%)];
   }
   .text-thrive-gold {
     @apply text-[hsl(39,67%,55%)];
   }
   .text-thrive-plum {
-    @apply text-[hsl(275,57%,16%)];
+    @apply text-[hsl(272,60%,22%)];
   }
   .text-thrive-orchid {
-    @apply text-[hsl(275,54%,78%)];
+    @apply text-[hsl(272,58%,68%)];
   }
   .text-thrive-ivory {
     @apply text-[hsl(40,41%,94%)];
   }
 
   .bg-thrive-purple {
-    @apply bg-[hsl(273,51%,34%)];
+    @apply bg-[hsl(272,65%,48%)];
   }
   .bg-thrive-gold {
     @apply bg-[hsl(39,67%,55%)];
   }
   .bg-thrive-plum {
-    @apply bg-[hsl(275,57%,16%)];
+    @apply bg-[hsl(272,60%,22%)];
   }
   .bg-thrive-orchid {
-    @apply bg-[hsl(275,54%,78%)];
+    @apply bg-[hsl(272,58%,68%)];
   }
   .bg-thrive-ivory {
     @apply bg-[hsl(40,41%,94%)];
@@ -198,9 +198,9 @@
     @apply border-[hsl(39,67%,55%)];
   }
   .border-thrive-purple {
-    @apply border-[hsl(273,51%,34%)];
+    @apply border-[hsl(272,65%,48%)];
   }
   .border-thrive-plum {
-    @apply border-[hsl(275,57%,16%)];
+    @apply border-[hsl(272,60%,22%)];
   }
 }

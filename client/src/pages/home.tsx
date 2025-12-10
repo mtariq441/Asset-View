@@ -131,10 +131,10 @@ export default function Home() {
       </nav>
 
       {/* Hero Section */}
-      <section className="relative min-h-screen flex items-center justify-center overflow-visible pt-16 md:pt-20 bg-gradient-to-b from-[hsl(275,57%,16%)] via-[hsl(273,51%,25%)] to-[hsl(275,57%,10%)]">
+      <section className="relative min-h-screen flex items-center justify-center overflow-visible pt-16 md:pt-20 bg-gradient-to-b from-[hsl(272,60%,22%)] via-[hsl(272,62%,30%)] to-[hsl(272,65%,18%)]">
         <div className="absolute inset-0 z-0">
-          <div className="absolute inset-0 bg-[hsl(275,57%,16%)]/40 z-10 mix-blend-multiply"></div>
-          <div className="absolute inset-0 bg-gradient-to-t from-[hsl(275,57%,16%)] via-transparent to-transparent z-10"></div>
+          <div className="absolute inset-0 bg-[hsl(272,60%,22%)]/40 z-10 mix-blend-multiply"></div>
+          <div className="absolute inset-0 bg-gradient-to-t from-[hsl(272,60%,22%)] via-transparent to-transparent z-10"></div>
           <img 
             src={heroWomen}
             alt="Women Veterans" 
@@ -144,7 +144,7 @@ export default function Home() {
 
         <div className="container relative z-20 px-4 md:px-6 text-center py-12 md:py-0">
           <div className="flex flex-col items-center">
-            <div className="inline-block mb-6 md:mb-8 px-6 md:px-8 py-3 md:py-4 border-2 border-[hsl(39,67%,55%)]/80 rounded-full bg-[hsl(275,57%,16%)]/40 backdrop-blur-sm">
+            <div className="inline-block mb-6 md:mb-8 px-6 md:px-8 py-3 md:py-4 border-2 border-[hsl(39,67%,55%)]/80 rounded-full bg-[hsl(272,60%,22%)]/40 backdrop-blur-sm">
               <span className="text-thrive-gold font-heading tracking-[0.2em] md:tracking-[0.3em] text-xs md:text-base font-bold uppercase drop-shadow-lg">
                 June 5-7, 2026 • Tampa, FL
               </span>
@@ -168,8 +168,8 @@ export default function Home() {
       </section>
 
       {/* About / Mission Section */}
-      <section id="about" className="py-40 bg-[hsl(275,57%,12%)] relative overflow-hidden border-t-2 border-thrive-gold/30 backdrop-premium">
-        <div className="absolute top-0 left-0 w-[500px] h-[500px] bg-[hsl(275,54%,78%)]/20 rounded-full blur-[120px] -translate-x-1/2 -translate-y-1/2"></div>
+      <section id="about" className="py-40 bg-[hsl(272,60%,20%)] relative overflow-hidden border-t-2 border-thrive-gold/30 backdrop-premium">
+        <div className="absolute top-0 left-0 w-[500px] h-[500px] bg-[hsl(272,65%,48%)]/15 rounded-full blur-[120px] -translate-x-1/2 -translate-y-1/2"></div>
         <div className="absolute bottom-0 right-0 w-[600px] h-[600px] bg-[hsl(39,67%,55%)]/10 rounded-full blur-[120px] translate-x-1/3 translate-y-1/3"></div>
 
         <div className="container mx-auto px-4 md:px-6 relative z-10">
@@ -217,8 +217,8 @@ export default function Home() {
       </section>
 
       {/* Speakers Section */}
-      <section id="speakers" className="py-40 bg-gradient-to-b from-[hsl(275,57%,12%)] to-[hsl(275,57%,10%)] text-thrive-ivory relative border-t-2 border-thrive-gold/30 backdrop-premium">
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-[#5a3684] to-[hsl(275,57%,16%)] opacity-30"></div>
+      <section id="speakers" className="py-40 bg-gradient-to-b from-[hsl(272,60%,20%)] to-[hsl(272,62%,18%)] text-thrive-ivory relative border-t-2 border-thrive-gold/30 backdrop-premium">
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-[hsl(272,65%,35%)] to-[hsl(272,60%,22%)] opacity-30"></div>
         <div className="container mx-auto px-4 md:px-6 relative z-10">
           <div className="text-center mb-20">
             <h2 className="text-4xl md:text-6xl font-heading font-bold mb-6 text-white">Distinguished Speakers</h2>
@@ -231,7 +231,7 @@ export default function Home() {
           <div className="grid md:grid-cols-3 gap-10">
             {speakers.map((speaker, index) => (
               <div key={index}>
-                <Card className="bg-[hsl(275,50%,18%)] border-2 border-[hsl(39,67%,55%)]/40 rounded-lg overflow-hidden group shadow-[0_15px_35px_rgba(0,0,0,0.3)]">
+                <Card className="bg-[hsl(272,55%,22%)] border-2 border-[hsl(39,67%,55%)]/40 rounded-lg overflow-hidden group shadow-[0_15px_35px_rgba(0,0,0,0.3)]">
                   <div className="aspect-[3/4] overflow-hidden relative mb-6">
                     <div className="absolute inset-0 border-3 border-[hsl(39,67%,55%)]/0 group-hover:border-[hsl(39,67%,55%)]/80 z-20 pointer-events-none inset-x-3 inset-y-3 rounded-lg"></div>
                     <div className="absolute inset-0 bg-[hsl(273,51%,34%)]/40 group-hover:bg-transparent z-10"></div>
@@ -260,7 +260,7 @@ export default function Home() {
       </section>
 
       {/* Schedule Section */}
-      <section id="schedule" className="py-40 bg-[hsl(275,57%,14%)] relative border-t-2 border-thrive-gold/30 backdrop-premium">
+      <section id="schedule" className="py-40 bg-[hsl(272,60%,21%)] relative border-t-2 border-thrive-gold/30 backdrop-premium">
         <div className="container mx-auto px-4 md:px-6">
           <div className="flex flex-col md:flex-row justify-between items-end mb-20 gap-8 border-b border-thrive-gold/20 pb-10">
             <div>
@@ -277,14 +277,14 @@ export default function Home() {
               {schedule.map((item, index) => (
                 <div key={index} className={`flex flex-col md:flex-row gap-8 items-center ${index % 2 === 0 ? 'md:flex-row-reverse' : ''}`}>
                   <div className="w-full md:w-1/2 flex md:justify-end justify-start md:px-16">
-                    <div className={`bg-[hsl(275,50%,18%)] p-8 md:p-10 rounded-lg shadow-[0_15px_35px_rgba(0,0,0,0.4)] w-full max-w-lg border-2 border-[hsl(39,67%,55%)]/40 group relative overflow-hidden ${index % 2 === 0 ? 'md:text-right' : ''}`}>
+                    <div className={`bg-[hsl(272,55%,22%)] p-8 md:p-10 rounded-lg shadow-[0_15px_35px_rgba(0,0,0,0.4)] w-full max-w-lg border-2 border-[hsl(39,67%,55%)]/40 group relative overflow-hidden ${index % 2 === 0 ? 'md:text-right' : ''}`}>
                       <div className="absolute top-0 left-0 w-1 h-full bg-gradient-to-b from-thrive-gold to-[#e8c06e]"></div>
                       <h3 className="text-2xl font-heading font-bold text-thrive-gold mb-3">{item.title}</h3>
                       <p className="text-thrive-ivory/70 leading-relaxed">{item.desc}</p>
                     </div>
                   </div>
                   
-                  <div className="hidden md:flex absolute left-1/2 -translate-x-1/2 w-4 h-4 rounded-full bg-thrive-gold shadow-[0_0_0_8px_hsl(275,57%,14%)] z-10"></div>
+                  <div className="hidden md:flex absolute left-1/2 -translate-x-1/2 w-4 h-4 rounded-full bg-thrive-gold shadow-[0_0_0_8px_hsl(272,60%,21%)] z-10"></div>
                   
                   <div className={`w-full md:w-1/2 flex md:justify-end justify-start md:px-16 ${index % 2 === 0 ? 'md:justify-start' : ''}`}>
                     <span className="text-3xl font-heading font-bold text-thrive-gold/50">{item.time}</span>
@@ -319,7 +319,7 @@ export default function Home() {
       </section>
 
       {/* Footer */}
-      <footer className="bg-[#0f050f] text-thrive-ivory py-24 border-t-2 border-thrive-gold/40 backdrop-premium">
+      <footer className="bg-[hsl(272,60%,12%)] text-thrive-ivory py-24 border-t-2 border-thrive-gold/40 backdrop-premium">
         <div className="container mx-auto px-4 md:px-6">
           <div className="grid md:grid-cols-4 gap-16">
             <div className="col-span-1 md:col-span-2">
