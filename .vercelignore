@@ -1,0 +1,9 @@
+server
+shared/schema.ts
+server/
+*.ts
+!client/**/*.ts
+!client/**/*.tsx
+.git
+.gitignore
+node_modules
