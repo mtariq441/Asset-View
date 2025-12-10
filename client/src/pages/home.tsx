@@ -216,6 +216,30 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Benefits Section */}
+      <section className="py-40 bg-[hsl(272,60%,21%)] relative border-t-2 border-thrive-gold/30 backdrop-premium">
+        <div className="absolute inset-0">
+          <div className="absolute top-1/2 left-0 w-96 h-96 bg-[hsl(272,65%,48%)]/10 rounded-full blur-3xl -translate-y-1/2"></div>
+          <div className="absolute top-1/2 right-0 w-96 h-96 bg-[hsl(39,67%,55%)]/8 rounded-full blur-3xl -translate-y-1/2"></div>
+        </div>
+        <div className="container mx-auto px-4 md:px-6 relative z-10">
+          <div className="grid md:grid-cols-3 gap-10">
+            <div className="bg-[hsl(272,55%,23%)] p-10 rounded-xl border-2 border-thrive-gold/30 shadow-[0_15px_35px_rgba(0,0,0,0.3)]">
+              <h3 className="text-2xl font-heading font-bold text-thrive-gold mb-4 uppercase tracking-wider">Elevate Your Career</h3>
+              <p className="text-thrive-ivory/75 leading-relaxed font-light">Forge powerful connections and discover new opportunities with industry leaders and fellow veterans.</p>
+            </div>
+            <div className="bg-[hsl(272,55%,23%)] p-10 rounded-xl border-2 border-thrive-gold/30 shadow-[0_15px_35px_rgba(0,0,0,0.3)]">
+              <h3 className="text-2xl font-heading font-bold text-thrive-gold mb-4 uppercase tracking-wider">Empower Yourself</h3>
+              <p className="text-thrive-ivory/75 leading-relaxed font-light">Gain invaluable insights from transformative workshops on leadership, finance, and well-being.</p>
+            </div>
+            <div className="bg-[hsl(272,55%,23%)] p-10 rounded-xl border-2 border-thrive-gold/30 shadow-[0_15px_35px_rgba(0,0,0,0.3)]">
+              <h3 className="text-2xl font-heading font-bold text-thrive-gold mb-4 uppercase tracking-wider">Celebrate Sisterhood</h3>
+              <p className="text-thrive-ivory/75 leading-relaxed font-light">Join a vibrant community of women who share your journey, strength, and ambition.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Speakers Section */}
       <section id="speakers" className="py-40 bg-gradient-to-b from-[hsl(272,60%,20%)] to-[hsl(272,62%,18%)] text-thrive-ivory relative border-t-2 border-thrive-gold/30 backdrop-premium">
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-[hsl(272,65%,35%)] to-[hsl(272,60%,22%)] opacity-30"></div>
@@ -291,6 +315,77 @@ export default function Home() {
                   </div>
                 </div>
               ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Location & Accommodations Section */}
+      <section id="location" className="py-40 bg-[hsl(272,60%,20%)] relative border-t-2 border-thrive-gold/30 backdrop-premium">
+        <div className="container mx-auto px-4 md:px-6">
+          <div className="text-center mb-20">
+            <h2 className="text-4xl md:text-6xl font-heading font-bold mb-6 text-thrive-gold uppercase tracking-wide">Location & Accommodations</h2>
+            <p className="text-thrive-ivory/75 max-w-2xl mx-auto text-lg">Discover the summit venue and our partnered hotels, offering special rates for our attendees.</p>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-10 mb-12">
+            {/* Venue Card */}
+            <div className="bg-gradient-to-br from-[hsl(272,65%,30%)] to-[hsl(272,60%,22%)] p-10 rounded-xl border-2 border-thrive-gold/30 shadow-[0_20px_40px_rgba(0,0,0,0.4)]">
+              <h3 className="text-3xl font-heading font-bold text-thrive-gold mb-6">The Venue</h3>
+              <h4 className="text-xl font-heading font-semibold text-white mb-4">Tampa Convention Center</h4>
+              <div className="flex items-start gap-3 mb-3">
+                <MapPin className="w-5 h-5 text-thrive-gold shrink-0 mt-1" />
+                <p className="text-thrive-ivory/80">333 S Franklin St, Tampa, FL 33602</p>
+              </div>
+              <div className="flex items-start gap-3">
+                <div className="w-5 h-5 rounded-full bg-thrive-gold/40 flex items-center justify-center shrink-0 mt-1">
+                  <span className="text-xs text-thrive-gold">🌐</span>
+                </div>
+                <p className="text-thrive-ivory/80"><a href="#" className="text-thrive-gold hover:text-[#e8c06e]">tampa.gov/tcc</a></p>
+              </div>
+            </div>
+
+            {/* Hotel & Getting Around */}
+            <div className="space-y-8">
+              {/* Hotel Partner */}
+              <div className="bg-[hsl(40,41%,94%)] p-8 rounded-xl shadow-[0_15px_35px_rgba(0,0,0,0.3)]">
+                <h4 className="text-xl font-heading font-bold text-thrive-plum mb-2 uppercase tracking-wide">Hotel Partner</h4>
+                <p className="text-thrive-plum/80 text-sm mb-4">Experience luxury and convenience with our exclusive partner hotel, located moments from the convention center.</p>
+                <h5 className="text-lg font-heading font-bold text-thrive-plum mb-2">JW Marriott Tampa Water Street</h5>
+                <p className="text-thrive-plum/70 text-sm mb-4">510 Water St, Tampa, FL 33602</p>
+                <div className="flex gap-4">
+                  <Button className="bg-thrive-plum text-white hover:bg-[hsl(272,65%,30%)] text-xs font-semibold px-4 py-2 rounded-lg">Book with Summit Rate</Button>
+                  <Button variant="outline" className="border-thrive-plum text-thrive-plum hover:bg-thrive-plum/5 text-xs font-semibold px-4 py-2 rounded-lg">View Hotel Details</Button>
+                </div>
+              </div>
+
+              {/* Getting Around */}
+              <div className="bg-[hsl(272,55%,22%)] p-8 rounded-xl border-2 border-thrive-gold/30">
+                <h4 className="text-xl font-heading font-bold text-thrive-gold mb-6 uppercase tracking-wide">Getting Around</h4>
+                <div className="space-y-4">
+                  <div className="flex gap-4">
+                    <div className="text-2xl">✈️</div>
+                    <div>
+                      <p className="text-thrive-gold font-semibold">Tampa International Airport (TPA)</p>
+                      <p className="text-thrive-ivory/70 text-sm">A 15-minute drive from the convention center.</p>
+                    </div>
+                  </div>
+                  <div className="flex gap-4">
+                    <div className="text-2xl">🅿️</div>
+                    <div>
+                      <p className="text-thrive-gold font-semibold">Parking</p>
+                      <p className="text-thrive-ivory/70 text-sm">Ample parking is available at the convention center and nearby garages.</p>
+                    </div>
+                  </div>
+                  <div className="flex gap-4">
+                    <div className="text-2xl">🚊</div>
+                    <div>
+                      <p className="text-thrive-gold font-semibold">TECO Line Streetcar</p>
+                      <p className="text-thrive-ivory/70 text-sm">A convenient way to explore the downtown area.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
